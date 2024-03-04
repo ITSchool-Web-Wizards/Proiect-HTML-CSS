@@ -689,8 +689,8 @@ body > a img {
 }
 
 .check-label{
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: auto 1fr;
   align-items: center;
   gap: 0.5rem;
 }
@@ -726,6 +726,7 @@ body > a img {
 
 .hidden-box:checked + .check-label .check-box{
   background: var(--red-500);
+  border: 1px solid var(--red-500);
 }
 
 .hidden-box:checked + .check-label .check-box:after{
@@ -933,6 +934,13 @@ body > a img {
 }
 
 @media (max-width: 768px) {
+  .hidden-box:checked + .check-label .check-text {
+    color: var(--blue-200);
+    background-size: 0;
+    text-decoration-line: line-through;
+    text-decoration-color: var(--red-500);
+  }
+  
   .tips-section {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
