@@ -671,13 +671,75 @@ body > a img {
   padding-block: 1.5rem 0.625rem;
 }
 
-.recipe-steps article:first-of-type ul,
+.recipe-steps article:first-of-type ul {
+  list-style: none;
+  color: var(--blue-400);
+}
+
 .recipe-steps ol {
   padding-inline-start: 2ch;
   color: var(--blue-400);
 }
 
-.recipe-steps article:first-of-type li span {
+.check-label{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.check-box{
+  display: flex;
+  align-self: center;
+  position: relative;
+  height: 1.5rem;
+  width: 1.5rem;
+  cursor: pointer;
+  border: 1px solid var(--blue-200);
+  border-radius: 0.5rem;
+}
+
+.hidden-box {
+  outline: none;
+  appearance: none;
+  pointer-events: none;
+  position: absolute;
+}
+
+.check-text {
+  cursor: pointer;
+  background-image: linear-gradient(90deg, var(--red-500), var(--red-500));
+  background-size: 0% 0.15em;
+  background-repeat: no-repeat;
+  background-position: left 0.75em;
+  transition: 
+    color 250ms ease-in-out,
+    background-size 250ms ease-in-out;
+}
+
+.hidden-box:checked + .check-label .check-box{
+  background: var(--red-500);
+}
+
+.hidden-box:checked + .check-label .check-box:after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0.1rem;
+  left: 0.5rem;
+  width: 0.45rem;
+  height: 0.95rem;
+  border: solid white;
+  border-width: 0 0.2rem 0.2rem 0;
+  transform: rotate(45deg);
+}
+
+.hidden-box:checked + .check-label .check-text {
+  color: var(--blue-200);
+  background-size: 100% 0.15em;
+}
+
+.recipe-steps .bold {
   font-weight: 700;
 }
 
