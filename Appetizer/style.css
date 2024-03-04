@@ -777,9 +777,7 @@ body > a img {
   grid-template-rows: 1fr 1fr 1fr;
   margin: var(--section-padding) var(--inline-padding);
   gap: 1rem;
-  background: linear-gradient(90deg, var(--red-600), var(--blue-500)) padding-box,
-    linear-gradient(270deg, var(--blue-300), var(--blue-500)) border-box;
-  border: 2px solid transparent;
+  background: linear-gradient(90deg, var(--red-600), var(--blue-500));
   border-radius: 2.5rem;
   padding: 1.5rem;
   align-items: center;
