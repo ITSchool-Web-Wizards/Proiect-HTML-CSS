@@ -690,7 +690,7 @@ body > a img {
 
 .check-label{
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: max-content max-content;
   align-items: center;
   gap: 0.5rem;
 }
@@ -934,6 +934,9 @@ body > a img {
 }
 
 @media (max-width: 768px) {
+  .check-label{
+    grid-template-columns: max-content 1fr;
+  }
   .hidden-box:checked + .check-label .check-text {
     color: var(--blue-200);
     background-size: 0;
