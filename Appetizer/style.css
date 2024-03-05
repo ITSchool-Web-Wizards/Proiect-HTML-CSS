@@ -946,8 +946,13 @@ body > a:is(:hover, :focus) {
 @media (max-width: 768px) {
   .check-label{
     grid-template-columns: max-content 1fr;
+    align-items: start;
   }
 
+  .check-box{
+    align-self: flex-start;
+  }
+  
   .hidden-box:checked + .check-label .check-text {
     color: var(--blue-200);
     background-size: 0;
