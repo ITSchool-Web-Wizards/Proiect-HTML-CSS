@@ -197,22 +197,40 @@ h3 {
 
 /* -----TO TOP ARROW----- */
 
-body > a img {
-  background-color: var(--blue-50);
-  border: 0.125rem solid var(--blue-500);
+body > a {
+  background: var(--red-50);
+  border: 0.125rem solid transparent;
   border-radius: 25rem;
-  height: 4rem;
+  height: 2.75rem;
+  width: 2.75rem;
   aspect-ratio: 1 / 1;
   position: fixed;
   inset-block-end: 2rem;
   inset-inline-end: 2rem;
-  padding: 1rem;
+  box-shadow: 0px 8px 16px 0px #AD0D4752;
+
+}
+
+body > a svg{
+  color: var(--red-500);
+  height: 1.25rem;
+  width: 1.25rem;
+  position: absolute;
+  inset: 0;
+  transform: translate(50%, 50%);
+}
+
+body > a:is(:hover, :focus) {
+  background: var(--red-500);
+  & svg{
+    color: white;
+  }
 }
 
 @media (max-width:768px) {
-  body > a img {
+  body > a {
     inset-block-end: 0.5rem;
-    inset-inline-end: 0.5rem;  
+    inset-inline-end: 0.5rem;
   }
 }
 
