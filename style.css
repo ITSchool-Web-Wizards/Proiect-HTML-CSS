@@ -105,12 +105,12 @@ button {
   }
 
   .grid-fw:has(.hero-section) {
-    background: radial-gradient(
+    background: 
+      radial-gradient(
         ellipse 130% 136% at top,
         rgba(173, 13, 71, 0.1),
         rgba(173, 13, 71, 0.5) 40%,
-        rgba(36, 5, 46, 1) 72%
-      ),
+        rgba(36, 5, 46, 1) 72%),
       url(./Assets/hero-img.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -169,7 +169,7 @@ h3 {
   line-height: 1.4;
   color: var(--red-500);
   text-underline-offset: 0.25em;
-  transition: color 250ms;
+  transition: color var(--animation-timing);
 }
 
 .light-link:hover {
@@ -207,11 +207,11 @@ body > a {
   position: fixed;
   inset-block-end: 2rem;
   inset-inline-end: 2rem;
-  box-shadow: 0px 8px 16px 0px #AD0D4752;
-
+  box-shadow: 0 0.5rem 1rem 0 rgba(173, 13, 71, 0.32);
+  transition: all var(--animation-timing);
 }
 
-body > a svg{
+body > a svg {
   color: var(--red-500);
   height: 1.25rem;
   width: 1.25rem;
@@ -222,12 +222,12 @@ body > a svg{
 
 body > a:is(:hover, :focus) {
   background: var(--red-500);
-  & svg{
+  & svg {
     color: white;
   }
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   body > a {
     inset-block-end: 0.5rem;
     inset-inline-end: 0.5rem;
@@ -246,14 +246,14 @@ body > a:is(:hover, :focus) {
 
 .fw-bar {
   grid-column: 1/-1;
-  grid-row: 1/2; 
+  grid-row: 1/2;
   display: grid;
   grid-template-columns: subgrid;
   border-block-end: 1px solid var(--blue-400);
-  background:
+  background: 
     linear-gradient(90deg, var(--blue-500), rgba(0, 0, 0, 0), var(--blue-500)),
     linear-gradient(0deg, rgba(36, 5, 46, 0.48), rgba(36, 5, 46, 0.48));
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25);
 }
 
 .nav-bar > a img {
@@ -276,7 +276,7 @@ body > a:is(:hover, :focus) {
   padding-inline: 1.5rem;
 }
 
-.nav-bar a:not(a:first-of-type){
+.nav-bar a:not(a:first-of-type) {
   border-inline-start: 1px solid var(--blue-400);
 }
 
@@ -425,14 +425,14 @@ body > a:is(:hover, :focus) {
     position: absolute;
     inset-inline: 0;
   }
-  
+
   .hero-section {
-    background: radial-gradient(
+    background: 
+      radial-gradient(
         ellipse 130% 136% at top,
         rgba(173, 13, 71, 0.1),
         rgba(173, 13, 71, 0.5) 40%,
-        rgba(36, 5, 46, 1) 72%
-      ),
+        rgba(36, 5, 46, 1) 72%),
       url(./Assets/hero-img.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -446,7 +446,7 @@ body > a:is(:hover, :focus) {
 }
 
 @media (max-width: 768px) {
-  .hero-section{
+  .hero-section {
     padding-block-start: 0;
   }
 
@@ -498,8 +498,11 @@ body > a:is(:hover, :focus) {
   .hamburger-menu::after,
   .hamburger-menu input {
     transform-origin: left center;
-    transition: opacity var(--animation-timing), width var(--animation-timing),
-      rotate var(--animation-timing), tanslate var(--animation-timing),
+    transition:
+      opacity var(--animation-timing), 
+      width var(--animation-timing),
+      rotate var(--animation-timing), 
+      tanslate var(--animation-timing),
       background-color var(--animation-timing);
   }
 
@@ -628,7 +631,7 @@ body > a:is(:hover, :focus) {
 .tabs label {
   color: var(--blue-200);
   padding: 1.125rem 1.5rem;
-  transition: all 250ms;
+  transition: all var(--animation-timing);
 }
 
 .tabs label:hover,
@@ -683,9 +686,10 @@ body > a:is(:hover, :focus) {
   grid-template-columns: 1fr 1fr;
   margin: var(--section-padding) var(--inline-padding);
   gap: 1rem;
-  background: linear-gradient(90deg, var(--yellow-100), var(--yellow-50)) padding-box,
+  background:
+    linear-gradient(90deg, var(--yellow-100), var(--yellow-50)) padding-box,
     linear-gradient(270deg, var(--yellow-100), var(--yellow-300)) border-box;
-  border: 2px solid transparent;
+  border: 0.125rem solid transparent;
   border-radius: 2.5rem;
   padding: 1.5rem;
 }

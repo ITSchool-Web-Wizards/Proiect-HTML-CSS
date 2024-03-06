@@ -102,19 +102,19 @@ button {
     grid-row: 6/7;
     grid-column: 2/3;
   }
-  
-.grid-fw:has(.hero-section) {
-  background: radial-gradient(
-      ellipse 130% 136% at top,
-      rgba(173, 13, 71, 0.1),
-      rgba(173, 13, 71, 0.5) 40%,
-      rgba(36, 5, 46, 1) 72%
-    ),
-    url(../Assets/hero-img-desert.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 60% 50%;
-}
+
+  .grid-fw:has(.hero-section) {
+    background: 
+      radial-gradient(
+        ellipse 130% 136% at top,
+        rgba(173, 13, 71, 0.1),
+        rgba(173, 13, 71, 0.5) 40%,
+        rgba(36, 5, 46, 1) 72%),
+      url(../Assets/hero-img-desert.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 60% 50%;
+  }
 }
 
 /* -----BODY----- */
@@ -168,7 +168,7 @@ h3 {
   line-height: 1.4;
   color: var(--red-500);
   text-underline-offset: 0.25em;
-  transition: color 250ms;
+  transition: color var(--animation-timing);
 }
 
 .light-link:hover {
@@ -182,7 +182,7 @@ h3 {
   line-height: 1.4;
   color: var(--yellow-50);
   text-underline-offset: 0.25em;
-  transition: color 250ms;
+  transition: color var(--animation-timing);
 }
 
 .dark-link:hover {
@@ -219,11 +219,11 @@ body > a {
   position: fixed;
   inset-block-end: 2rem;
   inset-inline-end: 2rem;
-  box-shadow: 0px 8px 16px 0px #AD0D4752;
-
+  box-shadow: 0 0.5rem 1rem 0 rgba(173, 13, 71, 0.322);
+  transition: all var(--animation-timing);
 }
 
-body > a svg{
+body > a svg {
   color: var(--red-500);
   height: 1.25rem;
   width: 1.25rem;
@@ -234,12 +234,12 @@ body > a svg{
 
 body > a:is(:hover, :focus) {
   background: var(--red-500);
-  & svg{
+  & svg {
     color: white;
   }
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   body > a {
     inset-block-end: 0.5rem;
     inset-inline-end: 0.5rem;
@@ -258,14 +258,14 @@ body > a:is(:hover, :focus) {
 
 .fw-bar {
   grid-column: 1/-1;
-  grid-row: 1/2; 
+  grid-row: 1/2;
   display: grid;
   grid-template-columns: subgrid;
   border-block-end: 1px solid var(--blue-400);
   background:
     linear-gradient(90deg, var(--blue-500), rgba(0, 0, 0, 0), var(--blue-500)),
     linear-gradient(0deg, rgba(36, 5, 46, 0.48), rgba(36, 5, 46, 0.48));
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.25);
 }
 
 .nav-bar > a img {
@@ -288,7 +288,7 @@ body > a:is(:hover, :focus) {
   padding-inline: 1.5rem;
 }
 
-.nav-bar a:not(a:first-of-type){
+.nav-bar a:not(a:first-of-type) {
   border-inline-start: 1px solid var(--blue-400);
 }
 
@@ -447,14 +447,14 @@ body > a:is(:hover, :focus) {
     position: absolute;
     inset-inline: 0;
   }
-  
+
   .hero-section {
-    background: radial-gradient(
+    background:
+      radial-gradient(
         ellipse 130% 136% at top,
         rgba(173, 13, 71, 0.1),
         rgba(173, 13, 71, 0.5) 40%,
-        rgba(36, 5, 46, 1) 72%
-      ),
+        rgba(36, 5, 46, 1) 72%),
       url(../Assets/hero-img-desert.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -520,8 +520,11 @@ body > a:is(:hover, :focus) {
   .hamburger-menu::after,
   .hamburger-menu input {
     transform-origin: left center;
-    transition: opacity var(--animation-timing), width var(--animation-timing),
-      rotate var(--animation-timing), tanslate var(--animation-timing),
+    transition:
+      opacity var(--animation-timing),
+      width var(--animation-timing),
+      rotate var(--animation-timing), 
+      tanslate var(--animation-timing),
       background-color var(--animation-timing);
   }
 
@@ -572,7 +575,7 @@ body > a:is(:hover, :focus) {
 
 .details-section div:nth-child(2) {
   grid-column: 2 / 3;
-  border-inline: 2px solid var(--blue-300);
+  border-inline: 0.125rem solid var(--blue-300);
 }
 
 .details-section div:last-child {
@@ -669,7 +672,7 @@ body > a:is(:hover, :focus) {
   padding-block-end: var(--section-padding);
 }
 
-.recipe-steps  h3 {
+.recipe-steps h3 {
   color: var(--red-500);
   display: flex;
   gap: 0.75rem;
@@ -682,7 +685,7 @@ body > a:is(:hover, :focus) {
 
 .recipe-steps div {
   border-block-end: 0.125rem solid var(--red-100);
-  background: linear-gradient(90deg, rgba(247, 231, 237, 1), rgba(247, 231, 237, 0));
+  background: linear-gradient(90deg, var(--red-50), var(--red-50-zero));
 }
 
 .recipe-steps p[class="heading-4-mo"] {
@@ -707,14 +710,14 @@ body > a:is(:hover, :focus) {
   color: var(--blue-400);
 }
 
-.check-label{
+.check-label {
   display: grid;
   grid-template-columns: max-content max-content;
   align-items: center;
   gap: 0.5rem;
 }
 
-.check-box{
+.check-box {
   display: flex;
   align-self: center;
   position: relative;
@@ -739,16 +742,16 @@ body > a:is(:hover, :focus) {
   background-repeat: no-repeat;
   background-position: left 0.75em;
   transition: 
-    color 250ms ease-in-out,
-    background-size 250ms ease-in-out;
+    color var(--animation-timing), 
+    background-size var(--animation-timing);
 }
 
-.hidden-box:checked + .check-label .check-box{
+.hidden-box:checked + .check-label .check-box {
   background: var(--red-500);
   border: 1px solid var(--red-500);
 }
 
-.hidden-box:checked + .check-label .check-box:after{
+.hidden-box:checked + .check-label .check-box:after {
   content: "";
   display: block;
   position: absolute;
@@ -790,7 +793,7 @@ body > a:is(:hover, :focus) {
   gap: 0.75rem;
   color: var(--yellow-900);
   padding: 1rem 1.5rem;
-  background: linear-gradient(90deg, rgba(255, 250, 241, 1), rgba(255, 255, 255, 0));
+  background: linear-gradient(90deg, var(--yellow-50), rgba(255, 255, 255, 0));
   align-items: start;
 }
 
@@ -822,8 +825,8 @@ body > a:is(:hover, :focus) {
 
 #tips-img,
 #tips-img2 {
-  border: 0.25rem solid rgba(255, 250, 241, 1);
-  box-shadow: 0px 16px 24px 0px rgba(233, 230, 234, 1);
+  border: 0.25rem solid var(--yellow-50);
+  box-shadow: 0 1rem 1.5rem 0 var(--blue-50);
   border-radius: 2.5rem;
   background-size: cover;
   background-repeat: no-repeat;
@@ -921,7 +924,7 @@ body > a:is(:hover, :focus) {
   line-height: 1.4;
   font-weight: 700;
   border: 0.1em solid transparent;
-  transition: background-color 250ms;
+  transition: background-color var(--animation-timing);
 }
 
 .button:hover,
@@ -956,12 +959,12 @@ body > a:is(:hover, :focus) {
 }
 
 @media (max-width: 768px) {
-  .check-label{
+  .check-label {
     grid-template-columns: max-content 1fr;
     align-items: start;
   }
 
-  .check-box{
+  .check-box {
     align-self: flex-start;
   }
 
@@ -971,7 +974,7 @@ body > a:is(:hover, :focus) {
     text-decoration-line: line-through;
     text-decoration-color: var(--red-500);
   }
-  
+
   .tips-section {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
@@ -995,7 +998,8 @@ body > a:is(:hover, :focus) {
       "Title"
       "Text"
       "Buttons";
-    background: linear-gradient(360deg, var(--red-600), var(--blue-500)) padding-box,
+    background: 
+      linear-gradient(360deg, var(--red-600), var(--blue-500)) padding-box,
       linear-gradient(180deg, var(--blue-300), var(--blue-500)) border-box;
   }
 
@@ -1156,7 +1160,6 @@ body > a:is(:hover, :focus) {
 }
 
 @media (max-width: 550px) {
-
   .cards > div {
     display: grid;
     grid-template-columns: 1fr;
