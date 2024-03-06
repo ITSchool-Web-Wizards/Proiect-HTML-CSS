@@ -631,7 +631,9 @@ body > a:is(:hover, :focus) {
 .tabs label {
   color: var(--blue-200);
   padding: 1.125rem 1.5rem;
-  transition: all var(--animation-timing);
+  transition: 
+    background-color var(--animation-timing),
+    color var(--animation-timing);
 }
 
 .tabs label:hover,
