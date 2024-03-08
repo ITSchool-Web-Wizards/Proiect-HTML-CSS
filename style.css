@@ -462,8 +462,7 @@ footer ul li a:hover {
 }
 
 .services {
-  border: 10px double gold;
-  max-width: 100%;
+  max-width: 80%;
   margin-block: 5rem;
 }
 
@@ -475,6 +474,7 @@ h3 {
 }
 
 .service-image {
+  border: 10px double gold;
   max-width: 100%;
   padding: 0.5rem;
 }
