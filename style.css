@@ -363,16 +363,16 @@ footer ul li a:hover {
   margin-block-start: 1rem;
 }
 
-.men-titles {
+.shop-titles {
   text-align: center;
 }
 
-.men-titles h1 {
+.shop-titles h1 {
   letter-spacing: 0.5rem;
-  margin: 3rem;
+  margin-block: 10rem;
 }
 
-.men-titles p {
+.shop-titles p {
   font-family: monospace;
   font-weight: 500;
   line-height: 1.5rem;
