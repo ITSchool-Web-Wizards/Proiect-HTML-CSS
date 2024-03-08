@@ -74,21 +74,19 @@ nav ul li a:hover {
 .titles {
   display: flex;
   justify-content: center;
-
   text-align: center;
 }
 
 .titles h1 {
   letter-spacing: 1rem;
-  margin-block-start: 5rem;
+  margin-block-start: 10rem;
   max-width: 100%;
-  margin: 1rem;
 }
 
 .titles h3 {
   margin-inline: auto;
   max-width: 100%;
-  margin-block: 10rem 20rem;
+  margin-block: 20rem 20rem;
 }
 
 .collections-grid {
@@ -658,11 +656,6 @@ label {
 
   .men-titles h3 {
     font-size: 0.7rem;
-  }
-
-  .header {
-    margin: 0;
-    padding: 0;
   }
 
   .men-titles p {
