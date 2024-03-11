@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --linewidth: 4rem;
+    --lineheight: 0.6rem;
+    --hamburger-gap: 0.3rem;
+    --milkapurple: #7c6aab;
+    --light-bgr: #f4f4f7;
+    --highlight-color: #7fd8f4;
+    --animation-time: 200ms ease-in-out;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    gap: 0;
+}
+#sustainability {
+    padding: 2rem;
+    background-image: url(/Proiect-HTML-CSS/images/fairtrade.jpg);
+    opacity: .3;
+    background-size: cover;
+    display: flex;
+    width: 50vw;
+}
+#story {
+    padding: 2rem;
+    background-image: url(/Proiect-HTML-CSS/images/tablet1988.webp);
+    opacity: .3;
+    background-size: cover;
+    display: flex;
+    width: 50vw;
+}
+
+footer {
+    padding: 2rem;
+    background-color: var(--milkapurple);
+    color: #fff;
+    display: flex;
+   flex-direction: column;
+   align-content: center;
+   justify-items: center;
+   align-items: center;  
+}
+
+h4 {
+    font-family: Roboto;
+    font-size: small;
+}
+
+.menu-footer a {
+    font-family: Roboto;
+    font-weight: 300;
+    color: #fff;
+    font-size: small;
+ }
+
+ .menu-footer {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;  
+ }
+
+.logo-white {
+    max-width: 30vw;
+    display: flex;
+}
+
+.social  {
+transform: scale(40%);
+display: flex;
+flex-direction: row;
+justify-self: center;
+justify-content:space-around;
+}
+
+footer svg {
+    display: flex;
+    flex-direction: row;
+    fill: #f4f4f7;
+}

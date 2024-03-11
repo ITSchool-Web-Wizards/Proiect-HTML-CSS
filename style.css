@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --linewidth: 4rem;
+    --lineheight: 0.6rem;
+    --hamburger-gap: 0.3rem;
+    --milkapurple: #7c6aab;
+    --light-bgr: #f4f4f7;
+    --highlight-color: #7fd8f4;
+    --animation-time: 200ms ease-in-out;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+/*        m-am blocat la meniu         */
+#hamburger-menu::before,
+#hamburger-menu::after,
+#hamburger-menu input {
+    content: "";
+    width: var(--linewidth);
+    height: var(--lineheight);
+    background-color: var(--milkapurple);
+    border-radius: 70rem;
+    transition: opacity var(--animation-time); 
+}
+
+#hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: var(--hamburger-gap);
+    width: max-content;
+    position: absolute;
+    inset-inline-start: 1%;
+    inset-block-start: 1% ;
+    z-index: 2;
+    cursor: pointer;
+}
+
+#hamburger-menu input {
+    appearance: none;
+    padding: 0;
+    margin: 0;
+    pointer-events: none;
+}
+
+#hamburger-menu input:checked {
+    opacity: 0;
+    width: 0;
+}
+
+.sliding-menu {
+    translate: -100%;
+    transition: translate var(--animation-time);
+    padding: 0.5rem 1rem;
+    background-color: var(--milkapurple);
+    color: var(--light-bgr);
+}
+
+.nav-wrap {
+   display: flex;
+   flex-direction: row;
+   justify-content: center ;
+    
+}
+.sliding-menu a {
+    color: #fff;
+    padding: 2rem;
+    font-family: Roboto;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+/* aici s termina codul de meniu */
+body h1 {
+    font-family: Roboto;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.fontcursive {
+    font-family: Lobster;
+    color: #fff;
+    font-size:5rem;
+}
+
+.fontnarrow {
+    font-family: Bebas Neue;
+    color: var(--highlight-color);
+    font-size: 4rem;
+}
+
+.tagline {
+    padding: 2rem;
+}
+
+.tagline .fontcursive {
+    font-family: Lobster;
+    color: #7fd8f4;
+    font-size:5rem;
+}
+
+.tagline .fontnarrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Bebas Neue;
+    color: #fff;
+    font-size: xx-large;
+    margin-top: -1rem;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.5em 1em;
+    margin-block: 1rem;
+}
+
+.hero-promo {
+    padding-block: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero-promo img {
+    display: flex;
+    align-self: center;
+    justify-self: left;
+    max-width: 95vw;
+    padding-block: 2rem;
+}
+
+.promo-mechanics{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.promo-mechanics a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--milkapurple);
+    font-family: Roboto;
+    font-weight: 400;
+    color: #fff;
+    border-radius: 2.9rem;
+}
+
+.prizes {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.promo-mechanics p {
+    font-family: Roboto;
+    font-weight: 400;
+    color: var(--milkapurple);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    
+    justify-content: space-between;
+    justify-items: center;
+    /* gap: 1rem; */
+    position: relative;
+    background-color: var(--milkapurple);
+    padding: 2rem;
+}
+
+/* Nu am reusit nicicum sa fie marginea de sus a sectiunii 
+#cow-cutout {
+    display: block;
+    position: relative;
+    top: 0;
+} */
+
+.headline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: scale(60%);
+}
+
+main h1, h2 {
+    font-family: Roboto;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+}
+
+#product-mood {
+    position: absolute;
+    inset-inline: 0;
+    inset-block-end: 0;
+    width: 70%;
+}
+
+main a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--highlight-color);
+    color: #fff;
+    border-radius: 2.9rem;
+    font-family: Roboto;
+    font-weight: 400;
+}
+
+.tagline {
+    transform: scale(40%);
+    z-index: 2;
+}
+
+section, nav, .hero-promo {
+    background-color: var(--light-bgr);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding: 2rem;
+    overflow: hidden;
+    background-image: url(/Proiect-HTML-CSS/images/pattern.svg);
+    background-size: cover;
+}
+
+section a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    background-color: var(--milkapurple);
+    font-family: Roboto;
+    font-weight: 400;
+    font-size:smaller;
+    color: #fff;
+    border-radius: 1rem;
+}
+
+section p {
+    font-family: Roboto;
+    font-weight: 400;
+    color: var(--milkapurple);
+    text-align: center;
+}
+
+.cocoa {
+    position: absolute;
+    width: 100%;
+    inset-inline-end: -25%;
+}
+
+footer {
+    padding: 2rem;
+    background-color: var(--milkapurple);
+    color: #fff;
+    display: flex;
+   flex-direction: column;
+   align-content: center;
+   justify-items: center;
+   align-items: center;  
+}
+
+h4 {
+    font-family: Roboto;
+    font-size: small;
+}
+
+.menu-footer a {
+    font-family: Roboto;
+    font-weight: 300;
+    color: #fff;
+    font-size: small;
+ }
+
+ .menu-footer {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;  
+ }
+
+.logo-white {
+    max-width: 30vw;
+    display: flex;
+}
+
+.social  {
+transform: scale(40%);
+display: flex;
+flex-direction: row;
+justify-self: center;
+justify-content:space-around;
+}
+
+footer svg {
+    display: flex;
+    flex-direction: row;
+    fill: #f4f4f7;
+}
+
+@media screen and (min-width: 600px) {
+    .hero-promo {
+        display: grid;
+        grid-template-columns: repeat (3, 1fr);
+        grid-auto-rows: minmax (1fr, auto);
+        grid-template-areas:
+        "title prizes"
+        "promobody prizes"
+        "cta gadgets";
+    }
+
+    .hero-promo img {
+        grid-area: title;
+    }
+
+    .hero-promo a {
+        grid-area: cta;
+    }
+
+    .promo-mechanics {
+        grid-area: promobody;
+    }
+
+    .container-img {
+        grid-area: gadgets;
+    }
+}
