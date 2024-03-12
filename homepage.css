@@ -81,6 +81,12 @@
     }
   }
 
+  @media (max-width: 768px) {
+    .hero-section {
+      padding-block-start: 0;
+    }
+  }
+  
 /* -----DESCRIPTION----- */
 
 .grid-fw:has(.description-section) {

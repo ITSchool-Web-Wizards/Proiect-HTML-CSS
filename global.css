@@ -354,10 +354,6 @@ body > a:is(:hover, :focus) {
 }
 
 @media (max-width: 768px) {
-  .hero-section {
-    padding-block-start: 0;
-  }
-
   .hero-section > article {
     display: flex;
     flex-direction: column;
@@ -437,9 +433,9 @@ body > a:is(:hover, :focus) {
     translate: 0;
   }
 
-  body:has(.hamburger-menu input:checked) {
+  /* body:has(.hamburger-menu input:checked) {
     overflow: hidden;
-  }
+  } */
 }
 /* -----CARDS SECTION----- */
 
