@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Skills and Projects</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #f07400, #9b59b6);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        font-size: 1.2em;
+      }
+
+      .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        opacity: 0;
+        animation: appear 0.5s ease-in-out forwards;
+      }
+
+      .bubble {
+        position: relative;
+        width: 250px;
+        height: 250px;
+        background: linear-gradient(135deg, #f07400, #9b59b6);
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        cursor: pointer;
+        opacity: 0;
+        animation: appearBubble 0.5s ease-in-out forwards;
+      }
+
+      h2 {
+        text-align: center;
+        margin: 0;
+        font-size: 1.5em;
+        line-height: 1.2;
+        position: relative;
+        z-index: 1;
+        margin-top: 10px;
+      }
+
+      .bubble-info {
+        text-align: center;
+      }
+
+      .projects-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 30px;
+        opacity: 0;
+        animation: appear 0.5s ease-in-out forwards;
+      }
+
+      .project {
+        flex: 1;
+        max-width: 350px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        opacity: 0;
+        transform: translateY(50px);
+        animation: appearProject 0.5s ease-in-out forwards,
+          slideInProject 1s ease-in-out 0.5s forwards;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      @keyframes appearBubble {
+        to {
+          opacity: 1;
+          transform: scale(1) rotate(0deg);
+        }
+      }
+
+      @keyframes appear {
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes appearProject {
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideInProject {
+        to {
+          transform: translateY(0);
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        .bubble {
+          width: 100%;
+        }
+
+        .project {
+          flex: 1 0 100%;
+          max-width: none;
+        }
+      }
+
+      @media only screen and (max-width: 767px) {
+        .bubble {
+          width: 80%;
+          height: auto;
+          aspect-ratio: 1/1;
+        }
+      }
+
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        body {
+          font-size: 1.2em;
+        }
+
+        h2 {
+          font-size: 1.5em;
+          margin-top: 20px;
+
+          .bubble {
+            width: 200px;
+            height: 200px;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="skills-container">
+      <div class="bubble" style="transform: scale(0) rotate(720deg)">
+        <div class="neon-light"></div>
+        <h2>HTML</h2>
+        <div class="bubble-info">
+          <p>Strong foundation in HTML</p>
+          <p>85%</p>
+        </div>
+      </div>
+
+      <div class="bubble" style="transform: scale(0) rotate(720deg)">
+        <div class="neon-light"></div>
+        <h2>CSS</h2>
+        <div class="bubble-info">
+          <p>Expert in styling with CSS</p>
+          <p>90%</p>
+        </div>
+      </div>
+
+      <div class="bubble" style="transform: scale(0) rotate(720deg)">
+        <div class="neon-light"></div>
+        <h2>JavaScript</h2>
+        <div class="bubble-info">
+          <p>Proficient in JavaScript</p>
+          <p>80%</p>
+        </div>
+      </div>
+
+      <div class="bubble" style="transform: scale(0) rotate(720deg)">
+        <div class="neon-light"></div>
+        <h2>HTML5</h2>
+        <div class="bubble-info">
+          <p>Experience with HTML5</p>
+          <p>80%</p>
+        </div>
+      </div>
+
+      <div class="bubble" style="transform: scale(0) rotate(720deg)">
+        <div class="neon-light"></div>
+        <h2>Tailwind</h2>
+        <div class="bubble-info">
+          <p>Experience with Tailwind CSS</p>
+          <p>75%</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="projects-container">
+      <div class="project">
+        <img src="htmml.image.jpg" alt="Project 1" />
+      </div>
+
+      <div class="project">
+        <img src="Java.image.jpg" alt="Project 2" />
+      </div>
+
+      <div class="project">
+        <img src="CSS.image.jpg" alt="Project 3" />
+      </div>
+    </div>
+  </body>
+</html>

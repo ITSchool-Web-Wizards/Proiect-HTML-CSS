@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #1e3799, #f07400);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 6em;
+        margin-bottom: 50px;
+        color: #fff;
+        position: relative;
+        animation: fadeInUp 1s ease-in-out;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      h1::before {
+        content: "Services";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        font-size: inherit;
+        color: #12f7ff;
+        text-shadow: 0 0 10px rgba(18, 247, 255, 0.7),
+          0 0 20px rgba(18, 247, 255, 0.5), 0 0 30px rgba(18, 247, 255, 0.3);
+        filter: blur(5px);
+      }
+
+      p {
+        font-size: 1.8em;
+        margin: 20px 0 40px;
+        color: #bdc3c7;
+        animation: fadeInUp 1.5s ease-in-out;
+      }
+
+      .bubble-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .bubble {
+        font-size: 1.8em;
+        width: 200px;
+        height: 200px;
+        line-height: 1.5;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 50%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.6s ease-in-out;
+        animation: fadeInUp 1.8s ease-in-out, floatBubble 3s infinite linear;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #000000;
+        overflow: hidden;
+        position: relative;
+        background: url("bubble.png") center/cover;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .bubble:hover {
+        transform: scale(1.1);
+      }
+
+      a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      a:hover {
+        color: #fff;
+      }
+
+      .btn-box {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+      }
+
+      .btn-box a {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 1.5em;
+        background: transparent;
+        color: #ff7b00;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: background-color 0.3s ease-in-out;
+        animation: fadeInUp 2s ease-in-out;
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes floatBubble {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+
+        50% {
+          transform: translateY(-15px);
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        h1 {
+          font-size: 4em;
+          margin-bottom: 30px;
+        }
+
+        .bubble {
+          width: 150px;
+          height: 150px;
+          font-size: 1.5em;
+        }
+
+        p {
+          font-size: 1.5em;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        h1 {
+          font-size: 3em;
+          margin-bottom: 20px;
+        }
+
+        .bubble {
+          width: 120px;
+          height: 120px;
+          font-size: 1.2em;
+        }
+
+        p {
+          font-size: 1.2em;
+        }
+      }
+
+      @media screen and (max-width: 1370px) {
+        body {
+          overflow: auto;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Services</h1>
+
+    <div class="bubble-container">
+      <div class="bubble">Website Development</div>
+      <div class="bubble">User Experience (UX) Design</div>
+      <div class="bubble">Front-end Frameworks (React, Angular, Vue.js)</div>
+      <div class="bubble">Cross-Browser Compatibility</div>
+      <div class="bubble">Responsive Design</div>
+      <div class="bubble">Performance Optimization</div>
+      <div class="bubble">Web Animation and Interactivity</div>
+      <div class="bubble">Collaboration with Back-end Developers</div>
+      <div class="bubble">Web Accessibility (WCAG)</div>
+      <div class="bubble">Content Management Systems (CMS)</div>
+      <div class="bubble">Version Control (Git)</div>
+      <div class="bubble">Code Review and Quality Assurance</div>
+      <div class="bubble">Continuous Learning</div>
+    </div>
+
+    <p>
+      Feel free to <a href="contact.html">contact me</a> if you have any
+      inquiries or if you'd like to discuss a project.
+    </p>
+
+    <div class="btn-box">
+      <a href="index.html">Get Back</a>
+    </div>
+  </body>
+</html>
