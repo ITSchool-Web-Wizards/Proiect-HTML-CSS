@@ -30,4 +30,28 @@
   --blue-700: rgb(26, 4, 33);
   --blue-800: rgb(20, 3, 25);
   --blue-900: rgb(15, 2, 19);
+  scroll-behavior: smooth;
+  --inline-padding: 6.25rem;
+  --section-padding: 3.5rem;
+  --main-font: Lato, system-ui, sans-serif;
+  --bar-width: 2rem;
+  --bar-height: 0.25rem;
+  --hamburger-gap: 0.5rem;
+  --hamburger-margin: 2rem;
+  --animation-timing: 250ms ease-in-out;
+  --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+  --x-width: calc(var(--hamburger-height) * 1.41421356237);
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --inline-padding: 3.125rem;
+  }
+}
+
+@media (max-width: 550px) {
+  :root {
+    --inline-padding: 1.25rem;
+    --section-padding: 2.25rem;
+  }
 }
