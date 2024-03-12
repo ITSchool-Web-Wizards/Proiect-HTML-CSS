@@ -1,0 +1,161 @@
+:root:baner-color(rgb(8, 161, 161))
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.wrapper{
+    background-color: rgb(221, 248, 239);
+    display: grid;
+    align-content: center;
+    box-sizing: border-box;
+    position: fixed;
+    margin: 1rem 2rem;
+    overflow-y: scroll;
+    max-width: 55rem;
+}
+
+.banner{
+    display: grid;
+
+}
+.banner-img{
+    background: rgb(8, 161, 161);
+
+}
+
+.banner-name{
+    color: #fff;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    background: rgb(8, 161, 161);
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #000;
+    padding-block: 1rem;
+}
+
+
+.navbar a:hover{
+    background-color: rgb(25, 156, 156);
+    text-decoration: underline;
+    border-radius: 1rem;
+    padding-inline: 4.5rem;
+    color: #fff;
+}
+
+.navbar a:focus{
+    display: block;
+    background-color: rgb(8, 161, 161);
+    border-radius: 1rem;
+    color: #f00;
+    text-decoration: underline;
+    padding-inline: 4.5rem;
+}
+
+.lugoplast-info{
+    display: grid;
+    justify-content: center;
+}
+
+.lugoplast-info h1{
+    padding-inline-start: 10rem;
+    text-decoration: underline;
+}
+
+.lugoplast-info a{
+    display: inline-block;
+    text-decoration: none;
+    color: blue;
+    margin-inline-start: -7rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    padding-inline: 1rem;
+}
+
+.lugoplast-info a:hover {
+    color: #fff;
+    text-decoration: underline;
+    background-color: rgb(8, 161, 161);
+    border-radius: 1rem;
+}
+
+.lugoplast-info a:focus {
+    color: #f00;
+    text-decoration: underline;
+    background-color: rgb(8, 161, 161);
+    border-radius: 1rem;
+}
+
+.lugoplast-img{
+    display: grid;
+    justify-content: center;
+    
+}
+
+@media(min-width: 48rem){
+    .wrapper{
+        /* max-width: 55rem; */
+    }
+
+    .banner{
+        display: grid;
+        grid-template-columns: 1fr 3.2fr;       
+    }
+
+    .banner-img{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .navbar{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .banner-name{
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+
+    .navbar{
+        display: flex    ;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color:rgb(8, 161, 161);
+        font-size: 1.5rem;
+        
+    }
+
+    .navbar a{
+        padding-inline: 2rem;
+        color: #fff;
+    }
+
+    .navbar a:hover{
+        background-color: #fff;
+        color: #000;
+        padding-inline: 2rem;
+    }
+
+    .navbar a:focus{
+        background-color: #fff;
+        color: #f00;
+        padding-inline: 2rem;
+    }
+}
+   
