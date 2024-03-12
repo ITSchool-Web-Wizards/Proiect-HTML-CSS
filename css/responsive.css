@@ -1,5 +1,25 @@
-@media (min-width: 64rem) {
+@media (min-width: 48rem) {
+    .hero-media {
+        display: grid;
+    }
 
+    .home-intro-video {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    img {
+        margin-right: 1.25rem;
+    }
+
+    .heading{
+        font-size: 7rem;
+        background-position: -170%;
+    }
+}
+
+@media (min-width: 64rem) {
     .dropdown-menu:hover {
         background-color: #000000;
         color: #ffffff;
@@ -9,24 +29,24 @@
         display: flex;
         margin: auto;
     }
-    
+
     #logo {
         width: 8rem;
         height: 6rem;
         margin-left: 0px;
     }
 
-    .link{
+    .link {
         display: none;
     }
 
-    .nav-menu{
+    .nav-menu {
         display: flex;
         justify-content: flex-end;
         margin-right: 0rem;
     }
 
-    .nav-menu a{
+    .nav-menu a {
         display: block;
         padding: 1rem;
         text-align: center;
@@ -36,38 +56,36 @@
         transition: background-color 0.3s ease-in-out;
     }
 
-    .nav-menu a:hover{
+    .nav-menu a:hover {
         background-color: #42b883;
         border-radius: 0.25rem;
     }
 
-    .nav-menu a:active{
+    .nav-menu a:active {
         background-color: #000000;
         color: #ffffff;
     }
 
-    .heading{
-        font-size: 5rem;
-        margin-top: 1rem;  
-        animation: animated-gradient 4s infinite alternate-reverse;
+    .heading {
+        font-size: 8rem;
+        margin-top: 10rem;
+        background-size: 200%;
+        background-position: -166%;
     }
 }
 
-@media (min-width: 48rem) {
-   .hero-media{
-       display: grid;
-   }
+@media (min-width: 90rem) {
+    .heading {
+        font-size: 9rem;
+        margin-top: 10rem;
+        background-size: 38%;
+        background-position: -152%;
+    }
 
-   .home-intro-video{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-   }
-
-   img {
-    
-    margin-right: 20px;
-
-   }
-    
+    .home-intro-video{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-right: 3rem;
+        margin-left: 3rem;
+    }
 }

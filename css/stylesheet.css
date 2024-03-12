@@ -69,7 +69,7 @@ header{
     text-transform: uppercase;
     background-image: url(https://media.giphy.com/media/l0DAI5cmkj0rYbwgo/giphy.gif?cid=790b7611ul2c3mh5d66iwmjvlq5bv4z0a7yz4qr6fug4n56n&ep=v1_gifs_search&rid=giphy.gif&ct=g);
     background-size: 200%;
-    background-position: -200%;
+    background-position: -175%;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
@@ -79,7 +79,7 @@ header{
 img {
     max-width: 100%;
     border-radius: 20px;
-    margin: 10px 0 20px;
+    margin-top: 1rem;
 }
 
 .home-intro-video{
@@ -92,13 +92,6 @@ img {
     justify-content: center;
     margin-top: 1rem;
 }
-
-.giphs{
-    width: 100%;
-    height: 100%;
-
-}
-
 
 #logo {
     height: 5rem;
