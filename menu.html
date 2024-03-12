@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <title>Tema Finala</title>
+
+    <style>
+
+
+        .first-part{
+            background-image:url(banners/banner2.png);
+            background-position: center;
+            background-size:cover;
+            background-repeat: no-repeat;
+        }
+
+        .burger-menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 2rem 0.5rem;
+        }
+        .burger-menu span {
+            font-size: 1.6rem;
+            color: #F2C64D;
+            font-family: "Pacifico", cursive;
+            font-weight: 500;
+        }
+        .burger-menu h1 {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 700;
+            line-height: 2rem;
+            font-size: 1.5rem;
+        }
+        .examples {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem 1rem;
+            
+        }
+        .burger{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            line-height: 1rem;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .burger h4 {
+            font-family: "Montserrat", sans-serif;
+            line-height: 2rem;
+        }
+        .burger p {
+            margin-top: 1rem;
+            color:#6E6E6E;
+        }
+        .dollars {
+            color: rgb(240, 84, 44);
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-top: 1rem;
+            font-family: "Pacifico", cursive;
+        }
+        .testimonials {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+        }
+        .testimonials h4 {
+            font-size: 2rem;
+            color: #F2C64D;
+            font-family: "Pacifico", cursive;
+            font-weight: 400;
+        }
+        .testimonials h2{
+            font-size: 2rem;
+            font-family: "Montserrat", sans-serif;
+            margin-bottom: 2rem;
+        }
+        .testimonials p{
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            line-height: 2rem;
+            color: #040E27;
+            font-family: 'Raleway', sans-serif;
+        }
+        .offers{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .first{
+                padding: 4rem;
+                background-image: url(offers/first.png);
+                object-fit: cover;
+                background-position: center;
+            }
+            .second{
+                padding: 4rem;
+                background-image: url(offers/second.png);
+                object-fit: cover;
+                background-position: center;
+            }
+            .offers span{
+                color: #F0542C;
+                font-weight: 700;
+                font-family:"Montserrat", sans-serif ;
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+            .offers h2 {
+                font-family: 'Raleway', sans-serif;
+                margin-bottom: 1rem;
+                color: white;
+            }
+            .offers p{
+                font-family: 'Raleway', sans-serif;
+                color: #E8E8E8;
+                margin-bottom: 1rem;
+            }
+            .offers button{
+                padding: 1rem 3rem;
+                border-radius: 2rem;
+                text-decoration: none;
+                border: none;
+                background-color: #F2C64D;
+                font-size: 1rem;
+                font-weight: 600;
+                color: white;
+            }
+            .offers button:hover{
+                background-color:white;
+                color: #F2C64D;
+            }
+            .ratings {
+                margin-bottom: 1rem;
+            }
+
+
+        @media only screen and (min-width: 48rem) and (max-width:240rem){
+            .container{
+                min-width: 48rem;
+                max-width:240rem;
+            }
+            .nav-menu {
+                justify-content: space-between;
+                padding:3rem 3rem;
+            }
+            .logo {
+                font-size: 1.3rem;
+            }
+            .links {
+                font-size: 1rem;
+            }
+            .links a {
+                font-size: 2rem;
+                margin-left: 4rem;
+            }
+            .links  a:hover{
+                    border-bottom:0.2rem solid #F2C64D;
+                }
+
+            .titles{
+                font-size: 3rem;
+                margin-bottom: 1rem;
+            }
+            .burger-menu {
+                font-size: 2rem;
+                
+            }
+            .burger-menu span{
+                font-size: 3rem;
+            }
+            .burger h4{
+                text-align:left;
+                padding: 0.2rem 1rem;
+                font-size: 2rem;
+                margin-top: 3rem;
+            }
+            .burger p{
+                font-size: 1rem;
+                padding: 0.5rem 1rem;
+                font-size: 1.5rem;
+                line-height: 2rem;
+                text-align: left;
+            }
+            .examples {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr 0.5fr;
+                justify-items: start;
+                align-content:center;
+                margin-top: 3rem;
+                padding: 1rem 3rem;
+            }
+            .burger{
+                align-items: flex-start;
+            }
+            .dollars{
+                font-size: 1.8rem;
+                padding: 0rem 1rem;
+                text-align: left;
+            }
+
+            .all-menu {
+                display: inline-block;
+                grid-column: 1/3;
+            }
+
+
+            .testimonials {
+                padding: 1rem 12rem;
+            }
+            footer{
+                display: grid;
+                justify-items: center;
+                align-content: center;
+                grid-template-areas:            
+                ".   locations   ."
+                "york   .      cal"
+                ".   socials     ."
+            }
+            .locations{
+                grid-area: locations;
+            }
+            .york{
+                grid-area: york;
+            }
+            .cal{
+                grid-area: cal;
+            }
+            .socials{
+                grid-area: socials;
+            }
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="first-part">
+            <div class="nav-menu">
+                <div class="logo"> <h1>Big Bite</h1></div>
+                <div class="links">
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+                <div class="titles">
+                    <h1>Menu</h1>
+                </div>
+        </div>
+        <div class="burger-menu">
+            <span>Big Bite Menu</span>
+            <h1>Best Ever Burgers</h1>
+            <div class="examples">
+                    <div class="burger b1">
+                        <div>
+                            <img src="burgers/1.png" alt="beefy burger">
+                        </div>
+                        <div>                        
+                            <h4>Beefy Burger</h4>
+                            <p>Juicy beef patty, melted cheese, lettuce, tomato, pickles, savory sauce.</p>
+                            <div class="dollars">$5</div>
+                        </div>
+
+                    </div>
+                    <div class="burger b2">
+                        <div>
+                            <img src="burgers/2.png" alt="beefy burger">
+                        </div>
+                        <div>
+                            <h4>Burger Bizz</h4>
+                            <p>Grilled portobello, roasted peppers, lettuce, tomato, aioli, whole-grain bun.</p>
+                            <div class="dollars">$5</div>
+                        </div>
+                    </div>
+                    <div class="burger b3">
+                        <div>
+                            <img src="burgers/3.png" alt="beefy burger">
+                        </div>
+                        <div>
+                            <h4>Crackles Burger</h4>
+                            <p>Char-grilled patty, crispy bacon, cheddar, BBQ sauce, onions, brioche bun.</p>
+                            <div class="dollars">$5</div>
+                        </div>
+                    </div>
+                    <div class="burger b4">
+                        <div>
+                            <img src="burgers/4.png" alt="beefy burger">
+                        </div>
+                        <div>
+                            <h4>Bull Burgers</h4>
+                            <p>Crispy chicken, pepper jack cheese, jalapenos, lettuce, chipotle mayo.</p>
+                            <div class="dollars">$5</div>
+                        </div>
+                    </div>
+                    <div class="burger b5">
+                        <div>
+                            <img src="burgers/5.png" alt="beefy burger">
+                        </div>
+                        <div>
+                            <h4>Delish Burger</h4>
+                            <p>Grilled mushrooms, melted Swiss cheese, beef patty, brioche bun.</p>
+                            <div class="dollars">$5</div>
+                        </div>
+                    </div>
+                    <div class="burger b6">
+                        <div>
+                            <img src="burgers/6.png" alt="beefy burger">
+                        </div>
+                        <div>
+                            <h4>Rocket Burgers</h4>
+                            <p> Seasoned lamb patty, feta cheese, tzatziki, cucumber, ciabatta bread.</p>
+                            <div class="dollars">$5</div>
+                        </div>
+                    </div>
+                    <div class="burger b7">
+                        <div>
+                            <img src="burgers/7.png" alt="beefy burger">
+                        </div>
+                        <div>
+                            <h4>Smokin Burger</h4>
+                            <p>Grilled pineapple, teriyaki-glazed chicken, ham, Swiss, brioche bun.</p>
+                            <div class="dollars">$5</div>
+                        </div>
+                    </div>
+                    <div class="burger b8">
+                        <div>
+                            <img src="burgers/8.png" alt="beefy burger">
+                        </div>
+                        <div>
+                            <h4>Burger Boys</h4>
+                            <p> Spicy turkey patty, avocado, pepper jack, salsa, multigrain bun.</p>
+                            <div class="dollars">$5</div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="offers">
+            <div class="first">
+                <span>20$</span>
+                <h2>Noble Majesty Burger</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione ipsa ullam a tenetur dignissimos quas.</p>
+                <button>Order Now</button>
+            </div>
+            <div class="second">
+                <span>20$</span>
+                <h2>Regal Crown Burger</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione ipsa ullam a tenetur dignissimos quas.</p>
+                <button>Order Now</button>
+            </div>
+        </div>
+        <div class="testimonials">
+            <h4>testimonials</h4>
+            <h2>HAPPY CUSTOMERS</h2>
+            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe iste a doloremque cum ipsam delectus, dolorum ex doloribus labore quis molestias, amet consectetur officia reiciendis!"</p>
+            <img src="comments/comment_3.png" alt="">
+            <p>Neagu Valentin</p>
+            <div class="ratings">      
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+            </div> 
+        </div>
+        <footer>
+            <h2 class="locations">Locations:</h2>
+            <div class="york">
+                <h3>New York</h3>
+                <p>5th flora, 700/D kings road,</p>
+                <p>green lane New York-1782</p>
+            </div>
+            <div class="cal">
+                <h3>California</h3>
+                <p>5th flora, 700/D kings road,</p>
+                <p>green lane New York-1782</p>
+            </div>
+            <div class="socials">
+                <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+                <a href="https://twitter.com" class="fa fa-twitter"></a>
+                <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+                <a href="https://www.google.com" class="fa fa-google"></a>
+            </div>
+        </footer>
+    </div>
+    <script src="https://kit.fontawesome.com/f4ea6efd4c.js" crossorigin="anonymous"></script>
+</body>
+</html>

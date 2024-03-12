@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tema Finala</title>
+
+    <style>
+
+
+        .first-part{
+            background-image:url(banners/bradcam2.png);
+            background-position: center;
+            background-size:cover;
+            background-repeat: no-repeat;
+        }
+
+
+        .about-section{
+            display: flex;
+            flex-direction:column-reverse;
+            padding: 2rem 1rem;
+        }
+        .about-image img {
+            width: 100%;
+            object-fit: cover;
+        }
+        .about-story span {
+            color: #F2C64D;
+            font-size: 1.8rem;
+            font-weight: 400;
+            font-family:"Pacifico", cursive;
+        }
+        .about-story h1 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            font-family: "Montserrat", sans-serif;
+            margin-bottom: 2rem;
+        }
+        .about-story p {
+            font-size: 1rem;
+            line-height: 1.9rem;
+            margin-bottom: 1rem;
+            color: #4D4D4D;
+            font-family: 'Raleway', sans-serif;
+        }
+        .gallery{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .gallTitle {
+            font-size: 2rem;
+            font-weight: 700;
+            text-align: center;
+            font-family:"Montserrat", sans-serif;
+        }
+        .gallery img {
+            margin: 0.5rem;
+            max-width: 20rem;
+        }
+        @media only screen and (min-width: 48rem) and (max-width:240rem){
+            .container{
+                min-width: 48rem;
+                max-width:240rem;
+            }
+            .nav-menu {
+                justify-content: space-between;
+                padding:3rem 3rem;
+            }
+            .logo {
+                font-size: 1.3rem;
+            }
+            .links {
+                font-size: 1rem;
+            }
+            .links a {
+                font-size: 2rem;
+                margin-left: 4rem;
+            }
+            .links  a:hover{
+                    border-bottom:0.2rem solid #F2C64D;
+                }
+            .about-section {
+                flex-direction: row-reverse;
+                justify-content: center;
+                flex-wrap: wrap-reverse;
+                align-items:center;
+                column-gap: 2rem;
+            }
+            .about-image img{
+                object-fit: contain;
+                padding:1rem 2rem;
+                max-width: 30rem;
+                min-width: 30rem;
+            }
+            .about-story  {
+                max-width: 30rem;
+                padding:1rem 2rem
+            }
+            .gallery {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 2rem 4rem;
+            }
+            .gallery img{
+                object-fit: cover;
+            }
+
+            footer{
+                display: grid;
+                justify-items: center;
+                align-content: center;
+                grid-template-areas:            
+                ".   locations   ."
+                "york   .      cal"
+                ".   socials     ."
+            }
+            .locations{
+                grid-area: locations;
+            }
+            .york{
+                grid-area: york;
+            }
+            .cal{
+                grid-area: cal;
+            }
+            .socials{
+                grid-area: socials;
+            }
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="first-part">
+            <div class="nav-menu">
+                <div class="logo"> <h1>Big Bite</h1></div>
+                <div class="links">
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+                <div class="titles">
+                    <h1>About</h1>
+                </div>
+        </div>
+        <div class="about-section">
+            <div class="about-story">
+                <span>About us</span>
+                <h1>Best Burger in your city</h1>
+                <p>Big Bite was born out of a shared love for great food and genuine hospitality. Founded by Serban Popescu, our journey began with a simple mission: to create a burger joint where quality meets passion. Today, that mission remains at the heart of everything we do.</p>
+                <p>At Big Bite, we believe that great burgers start with great ingredients. That's why we handpick only the finest, freshest ingredients for our creations. From our premium beef patties to our artisanal buns and farm-fresh toppings, every element of our burgers is chosen with care to ensure an unparalleled dining experience.</p>
+                <p>Quality isn't just a buzzword at Big Bite—it's our promise to you. We're committed to upholding the highest standards of excellence in every aspect of our operation. Whether you're dining in our cozy restaurant or grabbing takeout on the go, you can trust that every Big Bite burger is crafted with precision and passion.</p>
+            </div>
+            <div class="about-image">
+                <img src="About.png" alt="Chef">
+            </div>
+        </div>
+        <h1 class="gallTitle">OUR GALLERY</h1>
+        <div class="gallery">
+            <img src="gallery/gall2.png" alt="">
+            <img src="gallery/gall3.png" alt="">
+            <img src="gallery/gall4.png" alt="">
+            <img src="gallery/gall5.png" alt="">
+            <img src="gallery/gall4.png" alt="">
+            <img src="gallery/gall2.png" alt="">
+            <img src="gallery/gall4.png" alt="">
+            <img src="gallery/gall3.png" alt="">
+        </div>
+
+        <footer>
+            <h2 class="locations">Locations:</h2>
+            <div class="york">
+                <h3>New York</h3>
+                <p>5th flora, 700/D kings road,</p>
+                <p>green lane New York-1782</p>
+            </div>
+            <div class="cal">
+                <h3>California</h3>
+                <p>5th flora, 700/D kings road,</p>
+                <p>green lane New York-1782</p>
+            </div>
+            <div class="socials">
+                <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+                <a href="https://twitter.com" class="fa fa-twitter"></a>
+                <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+                <a href="https://www.google.com" class="fa fa-google"></a>
+            </div>
+        </footer>
+    </div>
+    <script src="https://kit.fontawesome.com/f4ea6efd4c.js" crossorigin="anonymous"></script>
+</body>
+</html>
