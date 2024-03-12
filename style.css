@@ -44,46 +44,45 @@ a{
    padding-bottom: 140% */
 /* } */
 .img-continut{
-    padding-right:1rem;
-    margin: 0.5rem;
+    
+    margin-left: 1.5rem;
    width: 90%;
     
 }
 .spansmer{
-z-index: 2;
-color: red;
-position: absolute;
-;
-justify-content: flex-start;
+    z-index: 2;
+    color: red;
+    position: absolute;
+    justify-content: flex-start;
 }
 
 
-@media screen and (min-width: 992px) {
-    .logo-img{
-
-    }
+@media screen and (min-width: 769px) {
+.utils{
+    display: none;
+}
+.logo-img{
+   margin-left: 4rem;
+}
     
 .container-continut{
-    gap: 0. 5rem;
-    border: 3px solid green;
-    width: 100%;
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   grid-template-rows: 50% 50%;
-   
-   
+    margin-left: 2rem;
+    gap: 3rem;
+    /* border: 3px solid green; */
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50% 50%;
 }
 .body-grid{
-text-align: center;
+    text-align: center;
 }
-            
+    
 .img-continut{
    width: 100%; 
-object-fit: cover;
+   object-fit: cover;
 
 }
     
-.negresa {
-    /* margin-left: 5rem; */
-}}
+}
     
