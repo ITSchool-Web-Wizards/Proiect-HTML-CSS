@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-logo" href="">
+                        <img id="logo" src="img/logoSound&Taste.png" sizes="" alt="Sound&Taste">
+                    </a>
+                    <div class="dropdown">
+                        <button class="link">Menu</button>
+                        <div class="dropdown-menu">
+                            <a href="index.html">Home</a>
+                            <a href="team.html">Team</a>
+                            <a href="artists&food.html">A&F</a>
+                        </div>     
+                    </div>
+                    <div class="nav-menu">
+                        <a href="index.html">Home</a>
+                        <a href="team.html">Team</a>
+                        <a href="artists&food.html">Artists&Food</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container-video">
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="img/video.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="register-container">
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number (Optional):</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+
+            <div class="form-group">
+                <label for="dietary-restrictions">Dietary Restrictions (Optional):</label>
+                <textarea id="dietary-restrictions" name="dietary-restrictions" rows="4"></textarea>
+            </div>
+
+            <div class="form-group checkbox">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the event terms and conditions.</label>
+            </div>
+            <button class="submit-button" type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
