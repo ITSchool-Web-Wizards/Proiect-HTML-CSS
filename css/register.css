@@ -216,8 +216,8 @@ textarea {
 
 @media (min-aspect-ratio: 16/9) {
   .back-video {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
   }
 }
 
@@ -283,7 +283,7 @@ Media Queries
 
   form{
     width: 25rem;
-    margin-top: 12rem;
+    margin-top: 25rem;
   }
   
   .back-video {
