@@ -1,5 +1,5 @@
 :root {
-  --gradient: linear-gradient(-45deg, #131313, #e1d9dc, #000000, #dce6e4);
+  --gradient: linear-gradient(-45deg, #131313, silver, #000000, #dce6e4);
 }
 
 * {
@@ -13,10 +13,6 @@ body {
   margin: 0;
 }
 
-.material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
-}
-
 .navigation-bar {
   z-index: 2;
   top: 0;
@@ -27,7 +23,7 @@ body {
   align-items: center;
   background: var(--gradient);
   background-size: 400% 400%;
-  animation: color-changer 10s ease infinite;
+  animation: color-changer 20s ease infinite;
 }
 
 nav a .logo {
@@ -45,6 +41,7 @@ nav li {
 }
 
 nav ul li a {
+  text-transform: uppercase;
   text-decoration: none;
   font-weight: bold;
   color: #fff;
@@ -54,17 +51,6 @@ nav ul li a {
 nav ul li a:hover {
   border-block-end: 5px white solid;
   padding-block-end: 1.75rem;
-}
-
-#searchbar {
-  padding-block: 1.5rem;
-  border-radius: 2em;
-  height: 2rem;
-  border-style: none;
-}
-
-.nav-button {
-  color: #fff;
 }
 
 .material-symbols-outlined:hover {
@@ -78,6 +64,7 @@ nav ul li a:hover {
 }
 
 .titles h1 {
+  text-transform: uppercase;
   letter-spacing: 1rem;
   margin-block-start: 10rem;
   max-width: 100%;
@@ -156,13 +143,6 @@ nav ul li a:hover {
   align-items: center;
 }
 
-.flex-button2 {
-  margin-block-start: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 #man2 {
   grid-column: 1/2;
   height: 100vh;
@@ -190,7 +170,7 @@ nav ul li a:hover {
 
 .men-collection-button:hover {
   background: var(--gradient);
-  animation: color-changer 3s ease-out infinite;
+  animation: color-changer 10s ease-out infinite;
   background-size: 400% 400%;
 }
 
@@ -207,7 +187,7 @@ nav ul li a:hover {
   width: 50%;
   background: var(--gradient);
   background-size: 400% 400%;
-  animation: color-changer 10s ease infinite;
+  animation: color-changer 20s ease infinite;
   transition: opacity 1s ease-out;
 }
 
@@ -216,7 +196,7 @@ nav ul li a:hover {
 }
 
 .description1 {
-  animation: text-color-changer 10s ease infinite;
+  animation: text-color-changer 20s ease infinite;
 }
 
 .collections-grid-women {
@@ -274,7 +254,7 @@ nav ul li a:hover {
   width: 50%;
   background: var(--gradient);
   background-size: 400% 400%;
-  animation: color-changer 10s ease infinite;
+  animation: color-changer 20s ease infinite;
   transition: opacity 1s ease-out;
 }
 
@@ -283,7 +263,7 @@ nav ul li a:hover {
 }
 
 .description2 {
-  animation: text-color-changer 10s ease infinite;
+  animation: text-color-changer 20s ease infinite;
 }
 
 .subscribe-section {
@@ -322,7 +302,7 @@ footer {
   display: flex;
   justify-content: space-between;
   background-size: 400% 400%;
-  animation: color-changer 10s ease infinite;
+  animation: color-changer 20s ease infinite;
 }
 
 footer ul {
@@ -476,7 +456,7 @@ h3 {
 .service-image {
   border: 10px double gold;
   max-width: 100%;
-  padding: 0.5rem;
+  padding: 0.2rem;
 }
 
 .contact {
@@ -554,21 +534,7 @@ label {
     max-width: 100%;
   }
 
-  #W1,
-  #W2,
-  #W3,
-  #W4,
-  #W5,
-  #W6,
-  #W7,
-  #W8,
-  #W9,
-  #W10,
-  #W11,
-  #W12,
-  #W13,
-  #W14,
-  #W15 {
+  .watches {
     max-width: 100%;
   }
 
@@ -584,14 +550,6 @@ label {
     background: var(--gradient);
     background-size: 400% 400%;
     animation: color-changer 10s ease infinite;
-  }
-
-  #searchbar {
-    display: none;
-  }
-
-  .nav-button {
-    display: none;
   }
 
   nav a .logo {
@@ -682,6 +640,13 @@ label {
     cursor: pointer;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .shop {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media (max-width: 420px) {
   nav li {
     margin: 0 0.5rem;

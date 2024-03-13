@@ -5,13 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gifts | Armani</title>
     <link rel="stylesheet" href="style.css" />
+    
+    <style>
+      body {
+      background-image: url(images/INSTORCOLLECTION.webp);
+      background-size: cover;
+      background-position-y: 150%;
+      background-repeat: no-repeat;
+      }
+    </style>
   </head>
-  <body style="background-image:url(images/INSTORCOLLECTION.webp); background-size:cover; background-position-y:150%; background-repeat:no-repeat"
->
+  <body>
     <nav class="navigation-bar">
       <a href="#">
-        <img class="logo" src="images/armani-logo.png" alt="armani-logo"
-      /></a>
+        <img class="logo" src="images/armani-logo.png" alt="armani-logo"/></a>
       <ul>
         <li><a href="index.html">HOME</a></li>
         <li><a href="women.html">WOMEN</a></li>
@@ -19,11 +26,8 @@
         <li><a href="gifts.html">GIFTS</a></li>
         <li><a href="services.html">SERVICES</a></li>
       </ul>
-      <input id="searchbar" type="text" placeholder="Search..." />
-       
-      </div>
     </nav>
-    <form class="send-gift-area" action="#" method="post">
+    <form class="send-gift-area" name="contact" method="POST" data-netlify="true">
       <h2>Buy a watch and send it as a gift !</h2>
 
       <label for="name">Your name:</label>
@@ -122,15 +126,12 @@
         </ul>
       </div>
       <div class="follow-us">
-        <h6>Follow us</h6>
-        <a href="#"
-          ><img src="images/facebook-icon.png" alt="facebook-icon"
-        /></a>
-        <a href="#"
-          ><img src="images/instagram-icon.png" alt="instagram-icon"
-        /></a>
-        <a href="#"><img src="images/twitter-icon.png" alt="twitter-icon" /></a>
-      </div>
+        <div class="follow-us">
+          <h6>Follow us</h6>
+          <a href="#"><img src="images/facebook-icon.png" alt="facebook-icon"/></a>
+          <a href="#"><img src="images/instagram-icon.png" alt="instagram-icon"/></a>
+          <a href="#"><img src="images/twitter-icon.png" alt="twitter-icon" /></a>
+        </div>
     </footer>
   </body>
 </html>
