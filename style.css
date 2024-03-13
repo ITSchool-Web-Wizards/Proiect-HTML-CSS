@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    background-color: fff;
 }
 
 .header-nav{
@@ -131,27 +132,19 @@ a{
     color: white;
     background-color: black;
     }
-
-
-
-
-
-
 /* Aici incepe footer */
 
 
 footer{
-    height: 30rem;
+    height: 20rem;
     width: 100%;
-    background-color: bisque;
+    
 }
 
 
 
 
 /* Aici incepe media Query */
-
-
 
 
 @media screen and  (max-width: 830px){
@@ -174,10 +167,6 @@ footer{
     
 }
         
-
-
-
-
 @media screen and (min-width: 769px) {
 
     .utils{
