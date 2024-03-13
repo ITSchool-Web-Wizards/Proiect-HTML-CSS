@@ -10,6 +10,7 @@ body {
 }
 
 /*Titlu Pro Barber*/
+
 header{
   display: flex;
   flex-direction: column;
@@ -23,15 +24,18 @@ header{
 }
 
 /*Meniu de navigare*/
+
 nav{
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
+  gap: 0.5rem;
   margin: 1rem;
   border-radius: 0.1rem;
+  font-size: 1rem;
 }
 
 .nav-link{
@@ -47,7 +51,7 @@ a.nav-link{
   height: 3rem;
 }
 
-.nav-link,h1{
+.nav-link{
   display: inline-block;
   text-decoration: none;
   padding-block: 0.1rem 0.1rem; 
@@ -66,9 +70,10 @@ a:hover, a:active {
 }
 
 /*Partea de descriere*/
+
 main{
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   align-content: start;
   align-items: center;
 }
@@ -78,7 +83,7 @@ main{
 }
 
 .sub{
-  text-shadow: 2px 2px 5px orange;
+  text-shadow: 2px 2px 5px rgb(199, 67, 67);
 }
 
 .subb{
@@ -91,6 +96,7 @@ main{
 }
 
 /*Scurta descriere*/
+
 section.p{
   display: flex;
   flex-direction: row;
@@ -98,18 +104,11 @@ section.p{
 }
 
 h2{
-  text-decoration-line: underline;
-  text-decoration-color: orange;
-  text-decoration-style: solid;
-}
-
-footer.h2{
-  text-decoration-line: underline;
-  text-decoration-color: orange;
-  text-decoration-style: solid;
+  color: white;
 }
 
 /*Partea de subsol*/
+
 footer{
   text-align:center;
   padding:1rem;
@@ -117,6 +116,7 @@ footer{
 }
 
 /*localizare pe harta*/
+
 .container{
   width:100%;
 }
@@ -124,6 +124,7 @@ footer{
 .map{
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   flex-wrap: nowrap;
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -139,27 +140,36 @@ iframe{
 
 .subtitle-small{
   box-sizing: border-box;
-  display: block;
+  display: inline-block;
   line-height: 2rem;
-  margin-bottom: 5rem;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-top: 2rem;
+  margin-bottom: 1rem;
+  margin-left: 0.1rem;
+  margin-right: 0.1rem;
+  margin-top: 0.5rem;
   outline-color: rgb(196, 196, 182);
   outline-style: none;
   padding-block-end: 0px 0px 0px 0px;
-  text-align: center;
+  text-align: left;
+  font-size: 0.9rem;
 }
 
 .subtitle-small-info{
   text-transform: uppercase;
 }
 
+address{
+  padding-bottom: 1rem;
+}
+
 .program{
   display: grid;
-  grid-template-rows: 1fr 0.5fr 0.5fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr;
 }
  
+.week{
+  padding-bottom: 0.5rem;
+}
+
 /*Sevicii.html*/
 
 .prices{
@@ -174,12 +184,12 @@ table,tr{
 }
 
 th,td{
-background-color: orange;
-text-align: center;
-padding-top: 1.3rem;
-padding-bottom: 1.3rem;
-padding-left: 2.5rem;
-padding-right: 2.5rem;
+  background-color: orange;
+  text-align: center;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 /*Galerie foto.html*/
@@ -208,6 +218,11 @@ padding-right: 2.5rem;
 }
 
 @media (min-width: 500px) {
+
+  nav{
+    font-size: 1.5rem;
+  }
+
   main{
     font-size: x-large;
   }
@@ -220,8 +235,22 @@ padding-right: 2.5rem;
     font-size: 1.5rem;
   }
 
+  .prices{
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+  }
+  
+  th,td{
+  background-color: orange;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  }
+  
   table,tr{
-    width:100%;
+    min-width:100%;
   }
 
   .images{
@@ -236,12 +265,24 @@ padding-right: 2.5rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 1rem;
+    gap: 2.5rem;
     padding-bottom: 5rem;
+    font-size: 2rem;
+    
   }
 
   section{
     padding-top: 2rem;
+  }
+
+  section.p{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .top,.sub,.subb{
+    text-align: center;
   }
   
   .images{
@@ -249,4 +290,3 @@ padding-right: 2.5rem;
   }
 
   }
- 
