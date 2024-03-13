@@ -14,9 +14,50 @@ z-index: 1;
 
 }
 
+
+.navbar-normal-size{
+    font-weight: 400;
+    margin-right: 3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+justify-content: flex-end;
+
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+
+
+.normal-size{
+
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-content: center;
+width: 80%;
+}
+
+.li-nav{
+    font-family: "Open Sans", sans-serif;
+    font-size: medium;
+    font-weight: 600;
+    text-decoration: bold;
+    list-style: none;
+}
+
+.li-nav :hover{
+border-bottom: 2px solid;
+}
+
+li:hover ul {display: block;}
+
 .logo-img{
 margin-top: 0.2rem;
-margin-left: 0.2rem;
+margin-left: 1rem;
 }
 .utils{
     width: 7rem;
@@ -25,6 +66,7 @@ margin-left: 0.2rem;
     justify-content: space-around;
 }
 a{
+    text-decoration: none;
     color: black !important;
 }
 
@@ -40,49 +82,104 @@ a{
     transition: .6s cubic-bezier(.5,0,.5,1);
     
 }
-/* .first-iamge{
-   padding-bottom: 140% */
-/* } */
+
+
+.first-iamge{
+    padding-bottom: 140%;
+}
+
 .img-continut{
-    
     margin-left: 1.5rem;
-   width: 90%;
+    width: 90%;
+height: auto;
     
 }
-.spansmer{
+
+
+.text-imagine{
     z-index: 2;
-    color: red;
+    top: 15px;
     position: absolute;
-    justify-content: flex-start;
+    border: red solid;
 }
+
+
+
+
+
+/* Aici incepe footer */
+
+
+footer{
+    height: 30rem;
+    width: 100%;
+    background-color: bisque;
+}
+
+
+
+
+/* Aici incepe media Query */
+
+
+
+
+@media screen and  (max-width: 830px){
+    .li-nav{
+        font-size: 14px;
+
+        
+    }
+    .navbar-normal-size{
+        margin-right: 1.5rem;
+    }
+}
+
+
+@media screen and  (max-width: 769px){
+    .navbar-normal-size{
+        display: none;
+    }
+
+    
+}
+        
+
+
 
 
 @media screen and (min-width: 769px) {
+
+    
 .utils{
     display: none;
 }
 .logo-img{
+    
    margin-left: 4rem;
 }
     
 .container-continut{
     margin-left: 2rem;
-    gap: 3rem;
+    gap: 2rem;
     /* border: 3px solid green; */
     width: 90%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50% 50%;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr ;
 }
 .body-grid{
+    display: grid;
     text-align: center;
 }
     
 .img-continut{
-   width: 100%; 
+    width: 100%; 
    object-fit: cover;
+}
+
+    
 
 }
     
-}
-    
+
