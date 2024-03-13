@@ -30,7 +30,7 @@ main   {
     background-color: transparent; /* Fundal alb pentru a contrasta cu umbra și bordura */
     display: flex; /* Permite aplicarea padding-ului și altor stiluri de bloc */
     text-align: center; /* Centrează textul în interiorul logo-ului */
-    max-width: 200px; /* Lățime maximă pentru logo, ajustează după necesitate */
+    max-width: 200px; /* Lățime maximă pentru logo*/
     overflow-wrap: break-word; 
     
 }   
@@ -145,7 +145,7 @@ header {
     border-radius: 15px 10px; /* Raze diferite pentru colțuri, puțin mai mici decât la logo */
     box-shadow: inset 0 0 8px rgba(234, 255, 255, 0.521); /* Umbra interioară subtilă, puțin mai puțin pronunțată decât la logo */
     background-color: transparent; /* Fundal  */
-    cursor: pointer; /* Cursorul mouse-ului se schimbă în pointer pentru a indica un element clicabil */
+    cursor: pointer; /* Cursorul mouse-ului se schimbă în pointer pentru a indica un element pe care se poate da clic */
     text-decoration: none; /* Elimină sublinierea textului pentru link-uri */
     display: inline-block; /* Permite aplicarea padding-ului și altor stiluri de bloc */
     text-align: center; /* Centrează textul în interiorul butonului */
@@ -162,7 +162,7 @@ header {
 
 .contact-button:hover, .contact-button:focus {
    
-    text-decoration: none; /* Elimină sublinierea textului */
+    text-decoration: none; 
     transition: all 0.3s ease-in,  color 0.5s ease-out;
     background-color: rgba(75, 216, 216, 0.362); /* Schimbă culoarea de fundal la hover/focus */
     color: #fff; /* Schimbă culoarea textului în alb la hover/focus */
@@ -180,39 +180,39 @@ header {
 
     .banner {
         font-size: 1em; /* Text mai mic pentru banner */
-        margin-left: 1rem; /* Spațiu redus */
+        margin-left: 1rem;
     }
 
     .content > div {
-        padding: 10px; /* Padding redus */
+        padding: 10px; 
     }
 }
 
 /* Stiluri pentru tablete și ecrane medii (481px - 768px) */
 @media (min-width: 481px) {
     .logo {
-        font-size: 30px; /* Mărime font ajustată pentru tablete */
+        font-size: 30px; /
     }
 
     .nav li {
-        margin: 0 15px; /* Spațiu mărit între elemente */
+        margin: 0 15px; 
     }
 
     .banner {
-        font-size: 1.2em; /* Mărime font ajustată pentru textul din banner */
-        margin-left: 2rem; /* Spațiu mărit */
+        font-size: 1.2em; 
+        margin-left: 2rem;
     }
 
     .content > div {
-        padding: 15px; /* Padding mărit */
+        padding: 15px; 
     }
 }
 
 /* Stiluri pentru ecrane mari (peste 770px) */
 @media (min-width: 770px) {
     .logo {
-        font-size: 35px; /* Mărime font pentru ecrane mari */
-        padding: 10px 15px; /* Padding ajustat */
+        font-size: 35px; 
+        padding: 10px 15px; 
         
     }
 
@@ -221,11 +221,11 @@ header {
     }
 
     .banner {
-        font-size: 1.5em; /* Mărime font pentru banner */
-        margin-left: 15rem; /* Spațiu ajustat */
+        font-size: 1.5em; 
+        margin-left: 15rem; 
     }
 
     .content > div {
-        padding: 20px; /* Padding pentru conținut */
+        padding: 20px; 
     }
 }
