@@ -21,7 +21,7 @@ z-index: 1;
     width: 100%;
     display: flex;
     align-items: center;
-justify-content: flex-end;
+    justify-content: flex-end;
 
 }
 
@@ -33,12 +33,11 @@ nav ul li a:before {
 
 
 .normal-size{
-
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-align-content: center;
-width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    width: 80%;
 }
 
 .li-nav{
@@ -50,14 +49,14 @@ width: 80%;
 }
 
 .li-nav :hover{
-border-bottom: 2px solid;
+    border-bottom: 2px solid;
 }
 
 li:hover ul {display: block;}
 
 .logo-img{
-margin-top: 0.2rem;
-margin-left: 1rem;
+    margin-top: 0.2rem;
+    margin-left: 1rem;
 }
 .utils{
     width: 7rem;
@@ -67,7 +66,7 @@ margin-left: 1rem;
 }
 a{
     text-decoration: none;
-    color: black !important;
+    color: black;
 }
 
 
@@ -88,20 +87,51 @@ a{
     padding-bottom: 140%;
 }
 
+
+.body-grid{
+    position: relative;}
+
 .img-continut{
     margin-left: 1.5rem;
     width: 90%;
-height: auto;
+    height: auto;
     
 }
 
 
 .text-imagine{
-    z-index: 2;
-    top: 15px;
+
+    display: flex;
+    justify-content: space-between;
     position: absolute;
-    border: red solid;
+    margin-left: 2.7rem;
+    top: 1rem;
+    width: 80%;
 }
+
+
+.h2title{
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    color: black;
+    justify-content: flex-start;
+}
+.shop22{
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 2px solid black;
+    -webkit-transition: background 1s; /* For Safari */
+    transition: background 1s; /* For modern browsers */
+}
+
+ .shop22:hover{
+    
+    color: white;
+    background-color: black;
+    }
+
 
 
 
@@ -150,13 +180,11 @@ footer{
 
 @media screen and (min-width: 769px) {
 
-    
-.utils{
+    .utils{
     display: none;
 }
-.logo-img{
-    
-   margin-left: 4rem;
+    .logo-img{
+        margin-left: 4rem;
 }
     
 .container-continut{
@@ -169,6 +197,8 @@ footer{
     grid-template-rows: 1fr 1fr ;
 }
 .body-grid{
+    width: 100%;
+    position: relative;
     display: grid;
     text-align: center;
 }
@@ -179,14 +209,15 @@ footer{
 
 }
 .cinci{
-    
-        grid-row-start: 4;
-        grid-row-end: -1;
-        grid-column-start: 1;
-        grid-column-end: -1;
-        }
+    grid-row-start: 4;
+    grid-row-end: -1;
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
 
-
+.h2title{
+    font-size: 20px;
+}
     
 
 }
