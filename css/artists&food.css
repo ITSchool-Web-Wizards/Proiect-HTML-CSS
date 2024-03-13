@@ -34,7 +34,7 @@ Header + Menu + Navbar
     z-index: 2020;
   }
   
-  .container{
+  .container-navbar {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -120,8 +120,170 @@ Header + Menu + Navbar
     transition: ease-in-out 0.6s;
   }
   
-  .nav-menu{
+  .nav-menu {
     display: none;
+  }
+
+  /* ---------------------
+  Hero section
+  --------------------- */
+
+.section-hero-home {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+    text-align: center;
+    overflow: hidden;
+  }
+
+ .container {
+    margin: auto;
+    width: 100%;
+  }
+
+  .heading {
+    font-size: 2rem;
+    letter-spacing: .06em;
+    line-height: 90%;
+    position: relative;
+    z-index: 2;
+  }
+
+  .paragraph {
+    color: grey;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    max-width: 100%;
+    position: relative;
+    z-index: 2;
+  }
+
+  .container-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    position: relative;
+    z-index: 2;
+  }
+
+
+  .button {
+    background-color: #ffffff;
+    border-radius: 0.65rem;
+    color: #000000;
+    cursor: pointer;
+    font-size: 1.25rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    transition: transform .5s cubic-bezier(.19,1,.22,1),opacity .8s cubic-bezier(.19,1,.22,1);
+  }
+
+  .button:hover {
+    background-color: #42b883;
+    color: #000000;
+    transform: scale(1.1);
+  }
+
+  .button:active {
+    background-color: #000000;
+    color: #ffffff;
+  }
+
+@keyframes slide {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 1rem 0;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 2.75rem;
+  margin: 0 1rem;
+}
+
+img {
+  border-radius: 50%;
+}
+
+/* --------------------- 
+Artist section
+--------------------- */
+
+@keyframes slide-artists {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.artist {
+  overflow: hidden;
+  padding: 1rem 0;
+  white-space: nowrap;
+  position: relative;
+}
+
+.artist:hover .artist-slide {
+  animation-play-state: paused;
+}
+
+.artist-slide {
+  display: inline-block;
+  animation: 50s slide-artists infinite linear;
+}
+
+.artist-slide img {
+  height: 6.75rem;
+  margin: 0 1rem;
+}
+
+  /* ---------------------
+  Media Queries
+  --------------------- */
+
+  @media (min-width: 48rem) {
+    .heading {
+      font-size: 2.5rem;
+    }
+
+    .paragraph {
+      font-size: 1.5rem;
+    }
+
+    .button {
+      font-size: 1.5rem;
+    }
+
+    .logos-slide img {
+      height: 4.5rem;
+    }
+
+    .artist-slide img {
+      height: 8.25rem;
+    }
   }
   
   @media (min-width: 64rem) {
@@ -171,4 +333,32 @@ Header + Menu + Navbar
       background-color: #000000;
       color: #ffffff;
     }
+
+    .heading {
+      font-size: 4rem;
+    }
+}
+
+@media (min-width: 90rem) {
+
+  .heading {
+    font-size: 5rem;
+  }
+
+  .paragraph {
+    font-size: 1.75rem;
+  }
+
+  .button {
+    font-size: 1.75rem;
+  }
+
+  .logos-slide img {
+    height: 5.25rem;
+  }
+
+  .artist-slide img {
+    height: 9.75rem;
+  }
+  
 }
