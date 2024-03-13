@@ -6,31 +6,19 @@
     <title>Front-End Web Developer</title>
     <style>
       body {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         margin: 0;
         padding: 0;
-        overflow: hidden; /* Change from hidden to auto */
+        overflow: auto; /* Change from hidden to auto */
         background-color: #f2f2f2; /* Light gray background */
         color: #000000;
         position: relative;
         animation: backgroundAnimation 10s linear infinite alternate; /* Animated transition */
       }
 
-      @keyframes backgroundAnimation {
-        from {
-          background-color: #f2f2f2; /* Light gray */
-        }
-
-        to {
-          background-color: #252525; /* Dark gray */
-        }
-      }
-
       header,
       section {
         position: relative;
         z-index: 1;
-        font-size: 1em;
       }
 
       header {
@@ -69,6 +57,16 @@
 
       section p {
         font-size: 1.2em; /* Adjust the font size as needed */
+      }
+
+      @keyframes backgroundAnimation {
+        from {
+          background-color: #f2f2f2; /* Light gray */
+        }
+
+        to {
+          background-color: #252525; /* Dark gray */
+        }
       }
 
       @keyframes fadeIn {
