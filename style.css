@@ -1,4 +1,6 @@
-:root:baner-color(rgb(8, 161, 161))
+:root {
+    --bg-color:rgb(0,157,161);
+}
 
 *{
     margin: 0;
@@ -12,27 +14,27 @@
     display: grid;
     align-content: center;
     box-sizing: border-box;
-    position: fixed;
     margin: 1rem 2rem;
-    overflow-y: scroll;
-    max-width: 55rem;
+    /* overflow-y: scroll;
+    flex-grow: 1;
+    height: 70vh; */
+    max-width: 20rem;
 }
 
 .banner{
     display: grid;
-
 }
 .banner-img{
-    background: rgb(8, 161, 161);
-
+    background: var(--bg-color);
 }
 
 .banner-name{
     color: #fff;
-    font-size: 2rem;
+    font-size: 1rem;
     display: flex;
     justify-content: center;
-    background: rgb(8, 161, 161);
+    background: var(--bg-color);
+    padding-inline: 1rem;
 }
 
 .navbar{
@@ -40,81 +42,100 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-block: 1rem;
 }
 
 .navbar a{
     text-decoration: none;
     color: #000;
     padding-block: 1rem;
+    padding-inline: 1rem;
 }
 
 
 .navbar a:hover{
-    background-color: rgb(25, 156, 156);
+    background-color:var(--bg-color);
     text-decoration: underline;
     border-radius: 1rem;
-    padding-inline: 4.5rem;
+    padding-inline: 1rem;
     color: #fff;
 }
 
 .navbar a:focus{
     display: block;
-    background-color: rgb(8, 161, 161);
+    background-color: var(--bg-color);
     border-radius: 1rem;
     color: #f00;
     text-decoration: underline;
-    padding-inline: 4.5rem;
+    padding-inline: 1rem;
 }
 
 .lugoplast-info{
     display: grid;
     justify-content: center;
+    gap: 1rem;
+    margin-inline: 1rem;
 }
 
 .lugoplast-info h1{
-    padding-inline-start: 10rem;
+    display: flex;
+    justify-content: center;
     text-decoration: underline;
+    margin-block-start: 1rem;
 }
 
-.lugoplast-info a{
-    display: inline-block;
+.lugoplast-info h3{
+    display: flex;
+    justify-content: center;
+}    
+
+.lugoplast-link a{
     text-decoration: none;
     color: blue;
-    margin-inline-start: -7rem;
     border: 1px solid black;
     border-radius: 1rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding-inline: 1rem;
+    margin-inline: 1rem;
 }
 
-.lugoplast-info a:hover {
+.lugoplast-link a:hover {
     color: #fff;
     text-decoration: underline;
-    background-color: rgb(8, 161, 161);
+    background-color: var(--bg-color);
     border-radius: 1rem;
 }
 
-.lugoplast-info a:focus {
+.lugoplast-link a:focus {
     color: #f00;
     text-decoration: underline;
-    background-color: rgb(8, 161, 161);
+    background-color: var(--bg-color);
     border-radius: 1rem;
 }
 
 .lugoplast-img{
-    display: grid;
-    justify-content: center;
-    
+    display: none;  
 }
 
-@media(min-width: 48rem){
+.footer-lugoplast{
+    display: flex;
+    background-color: var(--bg-color);
+    justify-content: center;
+    margin-block-start: 1rem;
+    color: #fff;
+}
+
+@media(min-width: 20rem){
+
     .wrapper{
-        /* max-width: 55rem; */
+        max-width: 90rem;
+        
     }
 
     .banner{
         display: grid;
-        grid-template-columns: 1fr 3.2fr;       
+        grid-template-columns: 1fr 3.2fr; 
+        background-color: var(--bg-color);      
     }
 
     .banner-img{
@@ -136,7 +157,7 @@
         display: flex    ;
         flex-direction: row;
         justify-content: space-around;
-        background-color:rgb(8, 161, 161);
+        background-color: var(--bg-color);
         font-size: 1.5rem;
         
     }
@@ -157,5 +178,26 @@
         color: #f00;
         padding-inline: 2rem;
     }
-}
-   
+
+    .banner-name{
+        font-size: 2rem;
+
+    }
+
+    .lugoplast-img{
+        display: flex;
+        justify-content: center;
+    }
+
+    .lugoplast-info{
+        font-size: 1.5rem;
+        gap: 3rem;
+    }
+
+    .lugoplast-link a{
+      font-size: 1.5rem;
+      margin-inline-start: 2rem;
+    }
+
+} 
+ 

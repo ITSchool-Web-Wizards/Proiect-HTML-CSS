@@ -4,12 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
     <style>
+        :root {
+            --bg-color:rgb(0,157,161);
+        }
+
         *{
             font-family: "Montserrat", sans-serif;
-            /* margin: 0;
+            margin: 0;
             padding: 0;
-            box-sizing: border-box; */
+            box-sizing: border-box;
         }
 
         .wrapper-about{
@@ -17,8 +27,7 @@
             display: grid;
             gap: 1rem;
             margin: 1rem 2rem;
-            max-width: 55rem;
-            box-sizing: border-box;
+            max-width: 20rem;
         }
 
         .banner{
@@ -26,16 +35,16 @@
 
         }
         .banner-img{
-            background: rgb(8, 161, 161);
-
+            background:var(--bg-color);
         }
 
         .banner-name{
             color: #fff;
-            font-size: 2rem;
+            font-size: 1rem;
             display: flex;
             justify-content: center;
-            background: rgb(8, 161, 161);
+            background: var(--bg-color);
+            padding-inline: 1rem;
         }
 
         .navbar{
@@ -43,6 +52,7 @@
             justify-content: center;
             flex-direction: column;
             align-items: center;
+            margin-block: 1rem;
         }
 
         .navbar a{
@@ -53,25 +63,25 @@
 
 
         .navbar a:hover{
-            background-color: rgb(25, 156, 156);
+            background-color: var(--bg-color);
             text-decoration: underline;
             border-radius: 1rem;
-            padding-inline: 4.5rem;
+            padding-inline: 1rem;
             color: #fff;
         }
 
         .navbar a:focus{
             display: block;
-            background-color: rgb(8, 161, 161);
+            background-color: var(--bg-color);
             border-radius: 1rem;
             color: #f00;
             text-decoration: underline;
-            padding-inline: 4.5rem;
+            padding-inline: 1rem;
         }
 
 
         .about-infos{
-            margin-inline: 2rem;
+            margin-inline: 1rem;
             display: grid;
             gap: 1rem;
         }
@@ -79,33 +89,46 @@
         .lugoplast-link a{
             text-decoration: none;
             color: blue;
-            font-size: 1.5rem;
+            font-size: 1rem;
             justify-content: center;
             border: 1px solid #000;
             border-radius: 1rem;
             margin-inline-start: 1rem;
-            padding-inline: 2rem;
+            padding-inline: 1rem;
         }
 
         .lugoplast-link a:hover{
             color: #fff;
             text-decoration: underline;
-            background-color: rgb(8, 161, 161);
+            background-color: var(--bg-color);
             border-radius: 1rem;
         }
 
         .lugoplast-link a:focus{
             color: #f00;
             text-decoration: underline;
-            background-color: rgb(8, 161, 161);
+            background-color: var(--bg-color);
             border-radius: 1rem;
         }
+
+        .footer-lugoplast{
+            display: flex;
+            background-color: var(--bg-color);
+            justify-content: center;
+            margin-block-start: 1rem;
+            color: #fff;
+        }
     
-        @media(min-width: 48rem){
+        @media(min-width: 20rem){
+
+            .wrapper-about{
+                max-width: 90rem;;
+            }
         
             .banner{
                 display: grid;
-                grid-template-columns: 1fr 3.2fr;       
+                grid-template-columns: 1fr 3.2fr;  
+                background-color: var(--bg-color);     
             }
 
             .banner-img{
@@ -127,7 +150,7 @@
                 display: flex    ;
                 flex-direction: row;
                 justify-content: space-around;
-                background-color:rgb(8, 161, 161);
+                background-color: var(--bg-color);
                 font-size: 1.5rem;
                 
             }
@@ -148,7 +171,25 @@
                 color: #f00;
                 padding-inline: 2rem;
             }
-        }    
+
+            .banner-name{
+                font-size: 2rem;
+            }
+
+            .about-infos{
+                margin-block-start: 3rem;
+            }
+
+            .lugoplast-link a{
+                font-size: 1.5rem;
+            }
+
+            .lugoplast-link{
+                margin-block-start: 2rem;
+            }
+
+        }   
+
 
     </style>
 </head>
@@ -220,12 +261,18 @@
         <div class="lugoplast-link">
         
             <a href="index.html">Go to Main page</a>
+
         </div>
         
         <div class="lugoplast-link">
+
             <a href="resita.html">Go to Depozit Resita</a>
         
         </div>
+
+        <footer class="footer-lugoplast">
+            All rights reserved Lugoplast &copy; 2024
+        </footer>
 
     </div>
 </body>
