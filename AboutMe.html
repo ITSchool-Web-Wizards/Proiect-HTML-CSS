@@ -101,7 +101,6 @@
       }
 
       .go-back {
-        position: fixed;
         bottom: 20px;
         left: 20px;
         background: linear-gradient(135deg, #535251, #645c68fa);
@@ -112,6 +111,13 @@
         display: inline-block;
         opacity: 0;
         animation: fadeInBtn 2s ease-out 1.5s forwards;
+      }
+
+      @media only screen and (max-width: 599px) {
+        .go-back {
+          position: static; /* Change to static or relative based on your layout */
+          /* Add any other necessary styles for smaller screens */
+        }
       }
 
       @keyframes fadeInBtn {
