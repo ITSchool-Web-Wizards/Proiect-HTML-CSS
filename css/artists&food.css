@@ -214,12 +214,12 @@ Header + Menu + Navbar
 
 .logos-slide {
   display: inline-block;
-  animation: 35s slide infinite linear;
+  animation: 45s slide infinite linear;
 }
 
 .logos-slide img {
   height: 2.75rem;
-  margin: 0 1rem;
+  margin: 0 2rem;
 }
 
 img {
@@ -232,7 +232,7 @@ Artist section
 
 @keyframes slide-artists {
   from {
-    transform: translateX(0%);
+    transform: translateX(0);
   }
   to {
     transform: translateX(-100%);
