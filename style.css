@@ -237,7 +237,7 @@ nav ul li a:hover {
 
 .women-collection-button:hover {
   background: var(--gradient);
-  animation: color-changer 3s ease-out infinite;
+  animation: color-changer 10s ease-out infinite;
   background-size: 400% 400%;
 }
 
@@ -331,7 +331,7 @@ footer ul li a:hover {
 
 .subscribe-button:hover {
   background: var(--gradient);
-  animation: color-changer 3s ease-out infinite;
+  animation: color-changer 10s ease-out infinite;
   background-size: 400% 400%;
 }
 
@@ -473,7 +473,7 @@ h3 {
 
 .contact-us:hover {
   background: var(--gradient);
-  animation: color-changer 3s ease-out infinite;
+  animation: color-changer 10s ease-out infinite;
   background-size: 400% 400%;
 }
 
