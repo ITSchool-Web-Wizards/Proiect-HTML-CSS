@@ -166,7 +166,7 @@ footer{
     width: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr ;
 }
 .body-grid{
     display: grid;
@@ -176,7 +176,16 @@ footer{
 .img-continut{
     width: 100%; 
    object-fit: cover;
+
 }
+.cinci{
+    
+        grid-row-start: 4;
+        grid-row-end: -1;
+        grid-column-start: 1;
+        grid-column-end: -1;
+        }
+
 
     
 
