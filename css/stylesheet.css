@@ -1,0 +1,178 @@
+@font-face {
+    font-family: "Anta-Regular";
+    src: url('../fonts/Anta-Regular.ttf') format('truetype');
+}
+
+* {
+    font-family: "Anta-Regular", sans-serif;
+}
+
+body{
+    line-height: 1.5;
+    background-color: #000000;
+}
+
+header{
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2019;
+}
+
+.navbar{
+    background-color: #000000;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    position: relative;
+    z-index: 2020;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar-header{
+    display: flex;
+    align-items:center;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.link {
+    background: none;
+    border: none;
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.25rem;
+    padding: 0;
+}
+
+.hero-layout {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+ 
+}
+
+.heading {
+    color: transparent;
+    font-size: 5rem;
+    text-transform: uppercase;
+    background-image: url(https://media.giphy.com/media/l0DAI5cmkj0rYbwgo/giphy.gif?cid=790b7611ul2c3mh5d66iwmjvlq5bv4z0a7yz4qr6fug4n56n&ep=v1_gifs_search&rid=giphy.gif&ct=g);
+    background-size: 200%;
+    background-position: -175%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    margin-top: 9rem; 
+}
+
+img {
+    max-width: 100%;
+    border-radius: 20px;
+    margin-top: 1rem;
+}
+
+.home-intro-video{
+   display: flex;
+   flex-direction: column;
+}
+    
+.hero-media{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+#logo {
+    height: 5rem;
+    margin-left: 1.25rem;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: calc(100% + 0.15rem);
+    right: 0;
+    background-color: #000000;
+    padding: .75rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(-0.5rem) translateX(1rem);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.dropdown > .link:hover + .dropdown-menu,
+.dropdown > .link:focus + .dropdown-menu,
+.dropdown-menu:hover,
+.dropdown-menu:focus {
+    opacity: 1;
+    transform: translateY(-0.5rem) translateX(1rem);
+    pointer-events: auto;
+}
+
+.link:hover {
+    color: #a9ff5c;
+    transition: ease-in-out 0.6s;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: .5rem 0;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.25rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.dropdown-menu a:hover {
+    color: #a9ff5c;
+    border-radius: 0.25rem;
+    transition: ease-in-out 0.6s;
+}
+
+.paragraph{
+    color: #ffffff; 
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+
+}
+
+.register-button {
+    background-color: #000;
+    border: none;
+    border-radius: 0.25rem;
+    color: rgb(239, 70, 239);
+    cursor: pointer;
+    font-size: 1.25rem;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    transition: 0.4s ease-in-out;
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.register-button:hover {
+    background-color: #FEF250;
+}
+
+.nav-menu{
+    display: none;
+}
+
