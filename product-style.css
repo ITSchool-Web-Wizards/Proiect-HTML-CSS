@@ -5,9 +5,6 @@
 }
 
 :root {
-    --linewidth: 4rem;
-    --lineheight: 0.6rem;
-    --hamburger-gap: 0.3rem;
     --milkapurple: #7c6aab;
     --light-bgr: #f4f4f7;
     --highlight-color: #7fd8f4;
@@ -24,14 +21,80 @@ h1 {
     font-weight: 100;
     color: var(--highlight-color);
 }
+
+h4 {
+    font-family: Roboto;
+    font-size: small;
+    text-align: center;
+    color: white;
+}
+
 a {
     text-decoration: none;
     text-transform: uppercase;
+
 }
+
 body {
     scroll-behavior: smooth;
     background-color: var(--light-bgr);
+    min-height: 100%;
 }
+
+.navigation {
+    border-bottom: 1px solid #bfabf1;
+    margin-block: .5rem;
+    width: 100%;
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    position: absolute;
+    font-family: Roboto;
+    font-weight: 600;
+    color: var(--milkapurple);
+    line-height: 3rem;
+    text-transform: uppercase;
+}
+
+.menu-open  {
+    position: absolute;
+    cursor: pointer;
+    margin: 0rem 1rem;
+    right: 0;
+}
+
+.menu-close {
+    display: none;
+}
+
+#nav_checkbox {
+    display: none;
+}
+
+.menu_items {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    margin: 1rem;
+}
+
+li {
+    list-style: none;
+    display: none;
+}
+
+ #nav_checkbox:checked ~ ul.menu_items li {
+    display: block;
+ }
+
+ #nav_checkbox:checked ~ label .menubars {
+    display: none;
+ }
+
+ #nav_checkbox:checked ~ label .menu-close {
+    display: block;
+ }
 
 header, main {
     padding: 1rem;
@@ -39,18 +102,9 @@ header, main {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-
-}
-header::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: url(/Proiect-HTML-CSS/images/pattern.svg) top center;
-    background-size: cover;
 }
 
-main{
+main {
     background-color: var(--light-bgr);
 }
 
@@ -63,13 +117,13 @@ h2 {
     text-transform: uppercase;
 }
 
-.product-container h2:hover {
+.product-card h2:hover {
     transform: scale(120%);
     cursor: pointer;
     transition: all 1s;
 }
 
-.descriptor {
+.description {
     padding: 1rem 0.5rem;
     background-color: var(--milkapurple);
     color: #fff;
@@ -82,67 +136,52 @@ h2 {
     transition: opacity 1s easeInOut 1s;
 }
 
-.descriptor:hover {
+.description:hover {
     opacity: 1;
 }
 
-.product-container {
+.product-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-items: center;
     text-align: center;
 }
-.product-grid {
-    display: grid;
-    grid-template-columns: 1fr;
+.product-gallery {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: flex-start;
 }
 
 footer {
-    padding: 2rem;
-    background-color: var(--milkapurple);
-    color: #fff;
-    display: flex;
-   flex-direction: column;
-   align-content: center;
-   justify-items: center;
-   align-items: center;  
-}
-
-h4 {
-    font-family: Roboto;
-    font-size: small;
-}
-
-.menu-footer a {
-    font-family: Roboto;
-    font-weight: 300;
-    color: #fff;
-    font-size: small;
- }
-
- .menu-footer {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;  
- }
-
-.logo-white {
-    max-width: 30vw;
-    display: flex;
-}
-
-.social  {
-transform: scale(40%);
-display: flex;
-flex-direction: row;
-justify-self: center;
-justify-content:space-around;
-}
-
-footer svg {
+    background-color: #7c6aab;
     display: flex;
     flex-direction: row;
-    fill: #f4f4f7;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;  
+}
+.menu-footer a {
+    font-family: Roboto;
+        font-weight: 300;
+        color: #fff;
+        font-size: small;
+    }
+
+.logo-white {
+    max-width: 5vw;
+    width: 100%;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    transform: scale(50%);
 }
