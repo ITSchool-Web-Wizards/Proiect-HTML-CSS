@@ -53,10 +53,6 @@ nav ul li a:hover {
   padding-block-end: 1.75rem;
 }
 
-.material-symbols-outlined:hover {
-  transform: scale(1.3);
-}
-
 .titles {
   display: flex;
   justify-content: center;
@@ -174,13 +170,13 @@ nav ul li a:hover {
   background-size: 400% 400%;
 }
 
-.cover1 {
+.cover-men {
   color: aquamarine;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  z-index: 1; /* Modificare aici */
+  z-index: 1;
   height: 79.2vh;
   position: absolute;
   left: 50%;
@@ -191,11 +187,11 @@ nav ul li a:hover {
   transition: opacity 1s ease-out;
 }
 
-.cover1:hover {
+.cover-men:hover {
   opacity: 0;
 }
 
-.description1 {
+.description-men {
   animation: text-color-changer 20s ease infinite;
 }
 
@@ -241,13 +237,13 @@ nav ul li a:hover {
   background-size: 400% 400%;
 }
 
-.cover2 {
+.cover-women {
   color: aquamarine;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  z-index: 1; /* Modificare aici */
+  z-index: 1;
   height: 80vh;
   position: absolute;
   left: 0;
@@ -258,11 +254,11 @@ nav ul li a:hover {
   transition: opacity 1s ease-out;
 }
 
-.cover2:hover {
+.cover-women:hover {
   opacity: 0;
 }
 
-.description2 {
+.description-women {
   animation: text-color-changer 20s ease infinite;
 }
 
