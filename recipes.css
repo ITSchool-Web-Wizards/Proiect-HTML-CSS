@@ -472,8 +472,8 @@
       "Title"
       "Text"
       "Buttons";
-    background: linear-gradient(360deg, var(--red-600), var(--blue-500))
-        padding-box,
+    background: 
+      linear-gradient(360deg, var(--red-600), var(--blue-500)) padding-box,
       linear-gradient(180deg, var(--blue-300), var(--blue-500)) border-box;
   }
 
