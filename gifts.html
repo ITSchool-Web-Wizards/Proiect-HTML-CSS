@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gifts | Armani</title>
+    <link rel="stylesheet" href="style.css" />
+    
+    <style>
+      body {
+      background-image: url(images/INSTORCOLLECTION.webp);
+      background-size: cover;
+      background-position-y: 150%;
+      background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navigation-bar">
+      <a href="#">
+        <img class="logo" src="images/armani-logo.png" alt="armani-logo"/></a>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="women.html">WOMEN</a></li>
+        <li><a href="men.html">MEN</a></li>
+        <li><a href="gifts.html">GIFTS</a></li>
+        <li><a href="services.html">SERVICES</a></li>
+      </ul>
+    </nav>
+    <form class="send-gift-area" name="contact" method="POST" data-netlify="true">
+      <h2>Buy a watch and send it as a gift !</h2>
+
+      <label for="name">Your name:</label>
+      <input class="input-gift" type="text" id="name" name="name" required />
+
+      <label for="adress">Your adress:</label>
+      <input
+        class="input-gift"
+        type="text"
+        id="adress"
+        name="adress"
+        required
+      />
+
+      <label for="receiver_name">The gift is for:</label>
+      <input
+        class="input-gift"
+        type="text"
+        id="receiver_name"
+        name="receiver_name"
+        required
+      />
+
+      <label for="receiver_adress">Receiver adress:</label>
+      <input
+        class="input-gift"
+        type="text"
+        id="receiver_adress"
+        name="receiver_adress"
+        required
+      />
+
+      <label for="produs">Watch:</label>
+      <select class="input-gift" id="produs" name="produs" required>
+        <option value="watch">
+          Gents Emporio Armani Chronograph Stainless Steel Mesh Watch
+        </option>
+        <option value="watch">
+          Gents Emporio Armani Chronograph Blue Nylon and Leather Watch
+        </option>
+        <option value="watch">
+          Gents Emporio Armani Chronograph Stainless Steel Watch
+        </option>
+        <option value="watch">
+          Ladies Emporio Armani<br />
+          Three-Hand Stainless Steel Watch
+        </option>
+        <option value="watch">
+          Ladies Emporio Armani <br />Three-Hand White Ceramic Watch
+        </option>
+        <option value="watch">Ladies Emporio Armani Watch</option>
+      </select>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <button class="send-gift" type="submit">Send gift!</button>
+    </form>
+    <footer class="footer">
+      <div class="customer-care">
+        <ul>
+          <li class="footer-title">Customer Care</li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Size Guide</a></li>
+          <li><a href="#">My Order</a></li>
+          <li><a href="#">Payment</a></li>
+          <li><a href="#">Authenticity</a></li>
+          <li><a href="#">Our services</a></li>
+          <li><a href="#">Digital greeting card</a></li>
+        </ul>
+      </div>
+      <div class="shipping-returns">
+        <ul>
+          <li class="footer-title">Shipping & Returns</li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Track Your Order</a></li>
+          <li><a href="#">Returns and Exchanges</a></li>
+        </ul>
+      </div>
+
+      <div class="legal-area">
+        <ul>
+          <li class="footer-title">Legal Area</li>
+          <li><a href="#">Terms and Conditions of Sale</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#"> Policy Cookie</a></li>
+          <li><a href="#">Cookie settings</a></li>
+        </ul>
+      </div>
+      <div class="our-company">
+        <ul>
+          <li class="footer-title">Our Company</li>
+          <li><a href="#">Find a Boutique</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Armani/Values</a></li>
+        </ul>
+      </div>
+      <div class="follow-us">
+        <div class="follow-us">
+          <h6>Follow us</h6>
+          <a href="#"><img src="images/facebook-icon.png" alt="facebook-icon"/></a>
+          <a href="#"><img src="images/instagram-icon.png" alt="instagram-icon"/></a>
+          <a href="#"><img src="images/twitter-icon.png" alt="twitter-icon" /></a>
+        </div>
+    </footer>
+  </body>
+</html>
