@@ -1,0 +1,25 @@
+.women-container{
+    padding-top: 5rem;
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    grid-template-rows: 50% 50%;
+    gap: 1rem;
+}
+
+
+.grid-women{
+    width: 400px;
+    height: 300px;
+border: red solid;
+    
+}
+
+.aclass{
+
+height: fit-content;
+}
+.img-women{  
+width: 100%; 
+object-fit: cover;
+
+}
