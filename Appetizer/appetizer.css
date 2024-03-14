@@ -1,0 +1,51 @@
+
+/* -----BIG SCREENS----- */
+
+@media (min-width: 1025px) {
+  .grid-fw:has(.hero-section) {
+    background: 
+      radial-gradient(
+        ellipse 130% 136% at top,
+        rgba(173, 13, 71, 0.1),
+        rgba(173, 13, 71, 0.5) 40%,
+        rgba(36, 5, 46, 1) 72%),
+      url(../Assets/hero-img-appetizer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 60% 0%;
+  }
+}
+
+/* -----HERO SECTION----- */
+
+@media (max-width: 1024px) {
+  .hero-section {
+    background: 
+      radial-gradient(
+        ellipse 130% 136% at top,
+        rgba(173, 13, 71, 0.1),
+        rgba(173, 13, 71, 0.5) 40%,
+        rgba(36, 5, 46, 1) 72%),
+      url(../Assets/hero-img-appetizer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 60% 0%;
+    padding-block-start: 7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding-block-start: 0;
+  }
+}
+
+/* -----TIPS AND TRICKS----- */
+
+.tips-section #tips-img {
+  background-image: url(../Assets/tips.png);
+}
+
+.tips-section #tips-img2 {
+  background-image: url(../Assets/appetizer-2.png);
+}

@@ -1,0 +1,293 @@
+/* -----BIG SCREENS----- */
+
+@media (min-width: 1025px) {
+  /* body {
+    display: grid;
+    grid-template-columns: auto minmax(1025px, 1440px) auto;
+    grid-template-rows: auto;
+  } */
+/* 
+  .container {
+    grid-column: 1 / 4;
+    display: grid;
+    grid-template-columns: subgrid;
+  } */
+
+  .grid-fw {
+    /* grid-column: 1/4; */
+    display: grid;
+    /* grid-template-columns: subgrid; */
+    grid-template-columns: auto minmax(1025px, 1440px) auto;
+  }
+
+  .nav-bar {
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+
+  .hero-section {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+
+  .description-section {
+    grid-row: 3/4;
+    grid-column: 2/3;
+  }
+
+  .details-section {
+    grid-row: 4/5;
+    grid-column: 2/3;
+  }
+
+  .cards-section {
+    grid-row: 5/6;
+    grid-column: 2/3;
+  }
+
+  .footer-section {
+    grid-row: 6/7;
+    grid-column: 2/3;
+  }
+
+  .grid-fw:has(.hero-section) {
+    background: 
+      radial-gradient(
+        ellipse 130% 136% at top,
+        rgba(173, 13, 71, 0.1),
+        rgba(173, 13, 71, 0.5) 40%,
+        rgba(36, 5, 46, 1) 72%),
+      url(./Assets/hero-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 60% 0%;
+  }
+}
+
+/* -----HERO SECTION----- */
+
+@media (max-width: 1024px) {
+  .hero-section {
+    background: 
+      radial-gradient(
+        ellipse 130% 136% at top,
+        rgba(173, 13, 71, 0.1),
+        rgba(173, 13, 71, 0.5) 40%,
+        rgba(36, 5, 46, 1) 72%),
+      url(./Assets/hero-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 60% 0%;
+    padding-block-start: 7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding-block-start: 0;
+  }
+}
+
+/* -----DESCRIPTION----- */
+
+.grid-fw:has(.description-section) {
+  background-color: var(--blue-500);
+}
+
+.description-section {
+  display: grid;
+  grid-template-columns: 45% auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "Quote Image"
+    "Author Image"
+    "Text Image";
+  align-content: center;
+  row-gap: 1rem;
+  column-gap: 8.875rem;
+  padding: 4.5rem var(--inline-padding);
+  text-wrap: pretty;
+}
+
+.description-section h3:first-of-type {
+  grid-area: Quote;
+  color: var(--yellow-50);
+  font-style: italic;
+  align-self: end;
+}
+
+.description-section h3:nth-of-type(2) {
+  grid-area: Author;
+  color: var(--yellow-500);
+}
+
+.description-section p:last-of-type {
+  grid-area: Text;
+  color: var(--blue-100);
+  text-wrap: pretty;
+  padding-block-start: 1rem;
+}
+
+.description-section img {
+  grid-area: Image;
+  align-self: center;
+  justify-self: center;
+}
+
+@media (max-width: 1024px) {
+  .description-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .description-section h3:first-of-type {
+    align-self: flex-start;
+  }
+}
+
+/* -----DETAILS-----*/
+
+.details-title {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1rem;
+  padding: var(--section-padding) var(--inline-padding) 1.5rem;
+}
+
+.details-title h2 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  color: var(--blue-500);
+}
+
+.details-title p {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  color: var(--blue-300);
+  text-wrap: pretty;
+}
+
+.details-tabs {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  padding: 0 var(--inline-padding) 1.5rem;
+  gap: 1.25rem;
+}
+
+.tabs {
+  grid-column: 1 / 2;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tabs input[type="radio"] {
+  display: none;
+}
+
+.tabs label {
+  color: var(--blue-200);
+  padding: 1.125rem 1.5rem;
+  transition: background-color var(--animation-timing),
+    color var(--animation-timing);
+}
+
+.tabs label:hover,
+.tabs label:focus {
+  cursor: pointer;
+  background-color: var(--red-50);
+  color: var(--red-500);
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
+
+.tabs .tab {
+  order: 1;
+  display: none;
+  border-block-start: 0.125rem solid var(--red-100);
+  width: 100%;
+}
+
+.tab h3 {
+  font-weight: 700;
+  color: var(--red-500);
+  padding-block: 0.625rem;
+}
+
+.tab p {
+  color: var(--blue-300);
+  text-wrap: pretty;
+}
+
+.tabs input[type="radio"]:checked + label + .tab {
+  display: block;
+}
+
+.tabs input[type="radio"]:checked + label {
+  border-block-end: 0.25rem solid var(--red-500);
+  margin-block-end: -0.125rem;
+  z-index: 1;
+  color: var(--red-500);
+}
+
+.details-tabs #img {
+  grid-column: 2 / 3;
+  border-radius: 1rem;
+  background-image: url(./Assets/bowl-with-tasty-sauce.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 20% 20%;
+}
+
+.details-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: var(--section-padding) var(--inline-padding);
+  gap: 1rem;
+  background: 
+    linear-gradient(90deg, var(--yellow-100), var(--yellow-50)) padding-box,
+    linear-gradient(270deg, var(--yellow-100), var(--yellow-300)) border-box;
+  border: 0.125rem solid transparent;
+  border-radius: 2.5rem;
+  padding: 1.5rem;
+}
+
+.details-footer h2 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  color: var(--blue-400);
+}
+
+.details-footer p {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  color: var(--blue-300);
+  text-wrap: pretty;
+}
+
+.details-footer img {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  align-self: center;
+}
+
+@media (max-width: 1024px) {
+  .details-title,
+  .details-tabs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .details-tabs > img {
+    display: none;
+  }
+
+  .details-footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 550px) {
+  .tabs label {
+    padding: 1.125rem 0.75rem;
+  }
+}
